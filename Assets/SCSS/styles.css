@@ -34,6 +34,16 @@ ul {
           flex-flow: row wrap;
 }
 
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
 /* ------------- Header ------------------------- */
 .account-nav {
   background: #272A31 !important;
@@ -84,14 +94,9 @@ ul {
   color: #D3D3D3;
 }
 
-.main-nav .navbar-brand {
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav .navbar-brand img {
+.main-nav img {
   width: 10%;
-  height: 100%;
+  height: 10%;
 }
 
 .main-nav .special-link {
@@ -116,25 +121,68 @@ ul {
   color: #EC5242;
 }
 
+/* --------------------- Header Media Queries ------------------- */
+@media only screen and (max-width: 768px) {
+  .account-nav {
+    display: none;
+  }
+  .main-nav {
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  .navbar-toggler img {
+    height: 40px;
+  }
+  .navbar-toggler:active {
+    outline: none;
+    border: none;
+  }
+}
+
 /* -------------------- Home-Hero ---------------------- */
 .home-hero {
+  padding: 5rem 0 0 0;
   text-align: center;
   background: url("../Media/—Pngtree—sunrise in space_3591477.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-size: 100% 110%;
+  background-position: center;
   height: 800px;
 }
 
 .home-hero h1 {
-  font-size: 3rem !important;
-  margin: 1rem;
+  font-size: 8rem !important;
+  margin: 2rem;
+}
+
+.home-hero h2 {
+  color: #D3D3D3;
 }
 
 .home-hero p {
-  font-size: 2rem !important;
+  font-size: 5rem !important;
+  color: #EC5242;
   margin: 0.5rem;
   line-height: 1.6;
+}
+
+.hero-graphic {
+  width: 40%;
+  height: 40%;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+/* ------------------- Home-Hero-Media ------------------------- */
+@media only screen and (max-width: 768px) {
+  .home-hero h1 {
+    font-size: 3rem;
+  }
 }
 
 /* ---------------------- Main Program -------------------------- */
@@ -172,6 +220,7 @@ ul {
 /* ------------------- Partners --------------------------- */
 .partners {
   text-align: center;
+  background: #272A31;
 }
 
 .logo-container {

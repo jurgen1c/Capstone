@@ -4,7 +4,19 @@ $primary-color: #272A31;
 $secondary-color: #EC5242;
 $terciary-color: #D3D3D3;
 
-
+@font-face {
+  font-family: myFirstFont;
+  src: url(../Media/Fonts/Cocogoose\ Pro-trial.ttf);
+  src: url(../Media/Fonts/Cocogoose\ Pro\ Light-trial.ttf);
+  src: url(../Media/Fonts/Cocogoose\ Pro\ Italic-trial.ttf);
+  src: url(../Media/Fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
+  src: url(../Media/Fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
+  src: url(../Media/Fonts/Cocogoose\ Pro\ Thin-trial.ttf);
+  src: url(../Media/Fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
+  src: url(../Media/Fonts/Cocogoose\ Pro\ Light\ Italic-trial.ttf);
+  src: url(../Media/Fonts/Cocogoose\ Pro\ Semilight\ Italic-trial.ttf);
+  src: url(../Media/Fonts/Cocogoose\ Pro\ UltraLight\ Italic-trial.ttf);
+}
 $secondary-font: 'Lato', sans-serif;
 
 
@@ -34,6 +46,11 @@ ul {
 .flex {
   display: flex;
   flex-flow: row wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column wrap;
 }
 
 /* ------------- Header ------------------------- */
@@ -75,16 +92,12 @@ ul {
       color: $terciary-color;
     }
   }
-
-  .navbar-brand {
-    margin: 0;
-    padding: 0;
-    img {
-      width: 10%;
-      height: 100%;
-    }
+  
+  img {
+    width: 10%;
+    height: 10%;
   }
-
+  
   .special-link {
     border: 2px solid $secondary-color;
     width: 200px;
@@ -103,24 +116,75 @@ ul {
   }
 }
 
+/* --------------------- Header Media Queries ------------------- */ 
+
+@media only screen and (max-width: 768px) {
+  .account-nav {
+    display: none;
+  }
+  .main-nav {
+    background: transparent;
+    box-shadow: none;
+  }
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    img {
+      height: 40px;
+    }
+    &:active {
+      outline: none;
+      border: none;
+    }
+  }
+  
+}
+
 /* -------------------- Home-Hero ---------------------- */
 
 .home-hero {
+  padding: 5rem 0 0 0;
   text-align: center;
   background: url("../Media/—Pngtree—sunrise\ in\ space_3591477.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-size: 100% 110%;
+  background-position: center;
   height: 800px;
   h1 {
-    font-size: 3rem !important;
-    margin: 1rem;
+    font-size: 8rem !important;
+    font-family: $myFirstFont;
+    margin: 2rem;
+  }
+  h2 {
+    color: $terciary-color;
   }
   p {
-    font-size: 2rem !important;
+    font-size: 5rem !important;
+    color: $secondary-color;
     margin: 0.5rem;
     line-height: 1.6;
   }
+}
+
+.hero-graphic {
+  width: 40%;
+  height: 40%;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+/* ------------------- Home-Hero-Media ------------------------- */
+
+@media only screen and (max-width: 768px) {
+  .home-hero {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+
 }
 
 /* ---------------------- Main Program -------------------------- */
@@ -161,6 +225,7 @@ ul {
 
 .partners {
   text-align: center;
+  background: $primary-color;
 }
 
 .logo-container {
