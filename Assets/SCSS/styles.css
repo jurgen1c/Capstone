@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* ------------- Variables -----------------------*/
+/* ------------- Global Styles ------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+/* ------------- Header ------------------------- */
+.account-nav {
+  background: #272A31 !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.account-nav a {
+  color: white;
+  margin: 0 1rem 0 0;
+}
+
+.account-nav a:hover {
+  color: #EC5242;
+  font-size: larger;
+}
+
+.main-nav {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#79aed1));
+  background: linear-gradient(white, #79aed1);
+  -webkit-box-shadow: 3px 3px 5px;
+          box-shadow: 3px 3px 5px;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+.main-nav li {
+  margin: 0 0.5rem;
+}
+
+.main-nav li:hover {
+  background: #272A31;
+  border-radius: 5px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  margin: 0 1.5rem;
+  padding: 0;
+}
+
+.main-nav a {
+  color: #EC5242;
+}
+
+.main-nav a:hover {
+  color: #D3D3D3;
+}
+
+.main-nav .navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav .navbar-brand img {
+  width: 10%;
+  height: 100%;
+}
+
+.main-nav .special-link {
+  border: 2px solid #EC5242;
+  width: 200px;
+  text-align: center;
+}
+
+.main-nav .special-link:hover {
+  margin: 0 2rem;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: ease-in 2s;
+  transition: ease-in 2s;
+}
+
+.main-nav .special-link a {
+  color: #272A31;
+}
+
+.main-nav .special-link a:hover {
+  color: #EC5242;
+}
+
+/* -------------------- Home-Hero ---------------------- */
+.home-hero {
+  text-align: center;
+  background: url("../Media/—Pngtree—sunrise in space_3591477.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 800px;
+}
+
+.home-hero h1 {
+  font-size: 3rem !important;
+  margin: 1rem;
+}
+
+.home-hero p {
+  font-size: 2rem !important;
+  margin: 0.5rem;
+  line-height: 1.6;
+}
+
+/* ---------------------- Main Program -------------------------- */
+.main-program {
+  text-align: center;
+  height: 400px;
+  background: #272A31;
+}
+
+.programs-container {
+  margin: 0 auto;
+  width: 80%;
+  height: 300px;
+  border: red 1px solid;
+}
+
+.program-box {
+  color: white;
+  text-align: center;
+  width: 20%;
+  height: 200px;
+  border: 1px solid yellow;
+}
+
+/* ---------------- Featured Speakers ---------------- */
+.featured-speakers {
+  text-align: center;
+}
+
+.speaker-box {
+  width: 50%;
+  height: 33%;
+}
+
+/* ------------------- Partners --------------------------- */
+.partners {
+  text-align: center;
+}
+
+.logo-container {
+  width: 70%;
+  margin: 1rem auto;
+}
+
+.logo-container img {
+  width: 20%;
+}
+
+/* -------------------- Footer ---------------------------- */
+.footer-container {
+  margin: 0 auto;
+  text-align: justify;
+  width: 60%;
+}
+
+.footer-container div {
+  margin: 1rem;
+}
+
+.footer-container img {
+  width: 30%;
+}
+
+.footer-info {
+  width: 70%;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,191 @@
+/* ------------- Variables -----------------------*/
+
+$primary-color: #272A31;
+$secondary-color: #EC5242;
+$terciary-color: #D3D3D3;
+
+
+$secondary-font: 'Lato', sans-serif;
+
+
+/* ------------- Global Styles ------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* ------------- Header ------------------------- */
+
+.account-nav {
+  background: $primary-color !important;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  a {
+    color: white;
+    margin: 0 1rem 0 0;
+  }
+  a:hover {
+    color: $secondary-color;
+    font-size: larger;
+  } 
+}
+
+.main-nav {
+  background: linear-gradient(white, rgb(121, 174, 209));
+  box-shadow: 3px 3px 5px;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+
+  li {
+    margin: 0 0.5rem;
+    &:hover {
+      background: $primary-color;
+      border-radius: 5px;
+      transform: scale(1.5);
+      margin: 0 1.5rem;
+      padding: 0;
+    }
+  }
+  a{
+    color: $secondary-color;
+    &:hover {
+      color: $terciary-color;
+    }
+  }
+
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+    img {
+      width: 10%;
+      height: 100%;
+    }
+  }
+
+  .special-link {
+    border: 2px solid $secondary-color;
+    width: 200px;
+    text-align: center;
+    &:hover {
+      margin: 0 2rem;
+      transform: rotate(360deg);
+      transition: ease-in 2s;
+    }
+    a {
+      color: $primary-color;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+/* -------------------- Home-Hero ---------------------- */
+
+.home-hero {
+  text-align: center;
+  background: url("../Media/—Pngtree—sunrise\ in\ space_3591477.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 800px;
+  h1 {
+    font-size: 3rem !important;
+    margin: 1rem;
+  }
+  p {
+    font-size: 2rem !important;
+    margin: 0.5rem;
+    line-height: 1.6;
+  }
+}
+
+/* ---------------------- Main Program -------------------------- */
+
+.main-program {
+  text-align: center;
+  height: 400px;
+  background: $primary-color;
+}
+
+.programs-container {
+  margin: 0 auto;
+  width: 80%;
+  height: 300px;
+  border: red 1px solid;
+}
+
+.program-box {
+  color: white;
+  text-align: center;
+  width: 20%;
+  height: 200px;
+  border: 1px solid yellow;
+}
+
+/* ---------------- Featured Speakers ---------------- */
+
+.featured-speakers {
+  text-align: center;
+}
+
+.speaker-box {
+  width: 50%;
+  height: 33%;
+}
+
+/* ------------------- Partners --------------------------- */
+
+.partners {
+  text-align: center;
+}
+
+.logo-container {
+  width: 70%;
+  margin: 1rem auto;
+  img {
+    width: 20%;
+  }
+}
+
+
+/* -------------------- Footer ---------------------------- */
+
+.footer-container {
+  margin: 0 auto;
+  text-align: justify;
+  width: 60%;
+  div{
+    margin: 1rem;
+  }
+  img {
+    width: 30%;
+  }
+}
+
+.footer-info {
+  width: 70%;
+}
