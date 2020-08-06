@@ -1,31 +1,4 @@
-/* ------------- Variables -----------------------*/
-
-$primary-color: #272A31;
-$secondary-color: #EC5242;
-$terciary-color: #D3D3D3;
-
-@font-face {
-  font-family: myFirstFont;
-  src: url("../Media/Fonts/Cocogoose\ Pro-trial.ttf");
-  src: url("../Media/Fonts/Cocogoose\ Pro\ Italic-trial.ttf");
-  src: url("../Media/Fonts/Cocogoose\ Pro\ Light-trial.ttf");
-  src: url("../Media/Fonts/Cocogoose\ Pro\ Light\ Italic-trial.ttf");
-  src: url("../Media/Fonts/Cocogoose\ Pro\ Semilight-trial.ttf");
-  src: url("../Media/Fonts/Cocogoose\ Pro\ Semilight\ Italic-trial.ttf");
-  src: url("../Media/Fonts/Cocogoose\ Pro\ Thin-trial.ttf");
-  src: url("../Media/Fonts/Cocogoose\ Pro\ Thin\ Italic-trial.ttf");
-  src: url("../Media/Fonts/Cocogoose\ Pro\ Ultralight-trial.ttf");
-  src: url("../Media/Fonts/Cocogoose\ Pro\ UltraLight\ Italic-trial.ttf");
-}
-$secondary-font: 'Lato', sans-serif;
-
-$break: 769px;
-
-/* ------------- Global Styles ------------------*/
-
-@mixin break {
-  
-}
+@import './_abstracts';
 
 * {
   margin: 0;
@@ -42,7 +15,7 @@ h1, h2, h3 {
 }
 
 h4, h5, h6, p {
-  font-family: $secondary-font;
+  font-family: 'Lato', sans-serif;
 }
 
 hr {
@@ -94,7 +67,7 @@ ul {
   background: linear-gradient(white, rgb(121, 174, 209));
   box-shadow: 3px 3px 5px;
   font-size: 1.8rem;
-  padding: 1rem 0;
+  padding: 0;
   width: 100%;
   margin: 0;
 

@@ -1,0 +1,21 @@
+/* ------------- Variables -----------------------*/
+
+$primary-color: #272A31;
+$secondary-color: #EC5242;
+$terciary-color: #D3D3D3;
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("../Media/Fonts/Cocogoose\ Pro-trial.ttf");
+}
+$secondary-font: 'Lato', sans-serif;
+
+$break: 769px;
+
+/* ------------- Global Styles ------------------*/
+
+@mixin responsive {
+  @media only screen and (min-width: $break) {
+    @content;
+  }
+}
