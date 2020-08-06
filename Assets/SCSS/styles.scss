@@ -6,21 +6,26 @@ $terciary-color: #D3D3D3;
 
 @font-face {
   font-family: myFirstFont;
-  src: url(../Media/Fonts/Cocogoose\ Pro-trial.ttf);
-  src: url(../Media/Fonts/Cocogoose\ Pro\ Light-trial.ttf);
-  src: url(../Media/Fonts/Cocogoose\ Pro\ Italic-trial.ttf);
-  src: url(../Media/Fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
-  src: url(../Media/Fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
-  src: url(../Media/Fonts/Cocogoose\ Pro\ Thin-trial.ttf);
-  src: url(../Media/Fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
-  src: url(../Media/Fonts/Cocogoose\ Pro\ Light\ Italic-trial.ttf);
-  src: url(../Media/Fonts/Cocogoose\ Pro\ Semilight\ Italic-trial.ttf);
-  src: url(../Media/Fonts/Cocogoose\ Pro\ UltraLight\ Italic-trial.ttf);
+  src: url("../Media/Fonts/Cocogoose\ Pro-trial.ttf");
+  src: url("../Media/Fonts/Cocogoose\ Pro\ Italic-trial.ttf");
+  src: url("../Media/Fonts/Cocogoose\ Pro\ Light-trial.ttf");
+  src: url("../Media/Fonts/Cocogoose\ Pro\ Light\ Italic-trial.ttf");
+  src: url("../Media/Fonts/Cocogoose\ Pro\ Semilight-trial.ttf");
+  src: url("../Media/Fonts/Cocogoose\ Pro\ Semilight\ Italic-trial.ttf");
+  src: url("../Media/Fonts/Cocogoose\ Pro\ Thin-trial.ttf");
+  src: url("../Media/Fonts/Cocogoose\ Pro\ Thin\ Italic-trial.ttf");
+  src: url("../Media/Fonts/Cocogoose\ Pro\ Ultralight-trial.ttf");
+  src: url("../Media/Fonts/Cocogoose\ Pro\ UltraLight\ Italic-trial.ttf");
 }
 $secondary-font: 'Lato', sans-serif;
 
+$break: 769px;
 
 /* ------------- Global Styles ------------------*/
+
+@mixin break {
+  
+}
 
 * {
   margin: 0;
@@ -30,6 +35,20 @@ $secondary-font: 'Lato', sans-serif;
 
 html {
   font-size: 62.5%;
+}
+
+h1, h2, h3 {
+  font-family: myFirstFont;
+}
+
+h4, h5, h6, p {
+  font-family: $secondary-font;
+}
+
+hr {
+  width: 40px;
+  background: $secondary-color;
+  margin: 1rem auto;
 }
 
 a {
@@ -57,9 +76,10 @@ ul {
 
 .account-nav {
   background: $primary-color !important;
+  height: fit-content;
   justify-content: flex-end;
   font-size: 1.5rem;
-  padding: 1rem 0;
+  padding: 0;
   a {
     color: white;
     margin: 0 1rem 0 0;
@@ -75,6 +95,13 @@ ul {
   box-shadow: 3px 3px 5px;
   font-size: 1.8rem;
   padding: 1rem 0;
+  width: 100%;
+  margin: 0;
+
+  nav {
+    width: 100%;
+    margin: 0;
+  }
 
   li {
     margin: 0 0.5rem;
@@ -83,7 +110,7 @@ ul {
       border-radius: 5px;
       transform: scale(1.5);
       margin: 0 1.5rem;
-      padding: 0;
+      padding: 0 1rem;
     }
   }
   a{
@@ -104,8 +131,6 @@ ul {
     text-align: center;
     &:hover {
       margin: 0 2rem;
-      transform: rotate(360deg);
-      transition: ease-in 2s;
     }
     a {
       color: $primary-color;
@@ -116,9 +141,28 @@ ul {
   }
 }
 
+.navbar-brand {
+  i {
+    color: $terciary-color;
+    z-index: 1;
+  }
+  h1 {
+    color: $secondary-color;
+    z-index: 2;
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+    color: $secondary-color;
+  }
+  i:hover {
+    color: $primary-color;
+  }
+}
+
 /* --------------------- Header Media Queries ------------------- */ 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (m-width: 768px) {
   .account-nav {
     display: none;
   }
@@ -145,15 +189,16 @@ ul {
 .home-hero {
   padding: 5rem 0 0 0;
   text-align: center;
-  background: url("../Media/—Pngtree—sunrise\ in\ space_3591477.png");
+  background: url("../Media/img/CATMEDIA-SPACE-Background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 110%;
+  background-size: cover;
   background-position: center;
-  height: 800px;
+  height: fit-content;
   h1 {
-    font-size: 8rem !important;
-    font-family: $myFirstFont;
+    font-size: 1.5rem !important;
+    font-family: myFirstFont;
     margin: 2rem;
+    color: $terciary-color;
   }
   h2 {
     color: $terciary-color;
@@ -167,18 +212,68 @@ ul {
 }
 
 .hero-graphic {
-  width: 40%;
-  height: 40%;
-  margin: 1rem;
+  position: relative;
+  width:fit-content;
+  height: fit-content;
+  margin: 1rem auto;
   padding: 0.5rem;
+  transform: none;
+  
+  h1 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 5rem;
+    color: $secondary-color;
+  }
+  button {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    display: none;
+    color: $terciary-color;
+    border: none;
+    border-radius: 5px;
+  }
+  &:hover {
+    h1 {
+      display: none;
+    }
+    button {
+      display: block;
+      background: $secondary-color;
+      width: 100px;
+      height: 50px;
+    }
+  }
+}
+
+#portal {
+  width: 30rem;
+  height: 30rem;
+  animation: 2.5s linear infinite spin !important;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg)!important;
+  }
 }
 
 /* ------------------- Home-Hero-Media ------------------------- */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .home-hero {
     h1 {
-      font-size: 3rem;
+      font-size: 8rem;
     }
   }
 }
@@ -191,13 +286,24 @@ ul {
 
 .main-program {
   text-align: center;
-  height: 400px;
+  height: fit-content;
   background: $primary-color;
+  color: white;
+  padding: 1rem 0;
+  a {
+    color: white;
+    font-size: 2rem;
+    border-bottom: 1px solid white;
+    margin: 5rem 0;
+    &:hover {
+      color: white;
+    }
+  }
 }
 
 .programs-container {
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
   height: 300px;
   border: red 1px solid;
 }
@@ -206,38 +312,76 @@ ul {
   color: white;
   text-align: center;
   width: 20%;
-  height: 200px;
-  border: 1px solid yellow;
+  height: 300px;
+  background-color: rgba(233, 233, 233, 0.2);
+  &:hover {
+    border: 2px solid $terciary-color;
+  }
 }
 
 /* ---------------- Featured Speakers ---------------- */
 
 .featured-speakers {
   text-align: center;
+  color: $primary-color;
+  height: fit-content;
+  h1 {
+    margin: 1rem 0;
+  }
 }
 
 .speaker-box {
   width: 50%;
   height: 33%;
+  img {
+    width: 50px;
+    height: 70px;
+  }
+  &:hover {
+    position: relative;
+    background: $primary-color;
+    color: $terciary-color;
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    img {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 25%;
+      height: 25%;
+    }
+  }
 }
+
 
 /* ------------------- Partners --------------------------- */
 
 .partners {
   text-align: center;
   background: $primary-color;
+  color: $terciary-color;
+  padding: 3rem;
+  height: fit-content;
 }
 
 .logo-container {
-  width: 70%;
+  width: 75%;
   margin: 1rem auto;
+  justify-content: space-evenly;
   img {
-    width: 20%;
+    width: 100px;
+    height: 50px;
   }
 }
 
 
 /* -------------------- Footer ---------------------------- */
+
+.footer-1 {
+  background-color: $primary-color;
+  color: white;
+}
 
 .footer-container {
   margin: 2rem auto;
