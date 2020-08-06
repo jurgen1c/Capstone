@@ -12,7 +12,7 @@ $secondary-font: 'Lato', sans-serif;
 
 $break: 769px;
 
-/* ------------- Global Styles ------------------*/
+/* ------------- Media ------------------*/
 
 @mixin responsive {
   @media only screen and (min-width: $break) {
