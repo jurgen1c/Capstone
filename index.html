@@ -9,10 +9,10 @@
   <title>ITC Global</title>
 </head>
 <body>
-  <header class="fixed-top container-fluid">
-    <div class="row account-nav">
+  <header>
+    <div class="account-nav">
       <nav>
-        <ul class="flex">
+        <ul class="flex-column-mobile">
           <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
           <li><a href=""><i class="fab fa-twitter"></i></a></li>
           <li><a href="">English</a></li>
@@ -22,17 +22,17 @@
       </nav>
     </div>
     <div class="main-nav">
-      <nav class="navbar flex">
+      <nav class="navbar flex-column-mobile">
         <div class="navbar-brand">
           <a href="#">
-            <i class="fas fa-infinity fa-2x"></i>
+            <i class="fas fa-infinity fa-2x"> ITC</i>
           </a>
         </div>
-        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars fa-2x"></i>
         </button>
         <div class="nav-links">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav flex-column-mobile">
             <li class="">
               <a href="index.html" class="">Home</a>
             </li>
@@ -60,7 +60,7 @@
     </div>
   </header>
   <main>
-    <section class="home-hero flex-column">
+    <section class="home-hero flex-mobile">
           <h1>Welcome Travellers, to the...</h1>
           <div>
             <div class="hero-graphic">
@@ -69,7 +69,6 @@
               <button type="button" data-target=>
                 Join
               </button>
-              <img id="thunder" src="./Assets/Media/img/Lighting-PNG-Pic.png" alt="thunderus">
             </div>
           </div>
           <p>Please remember to stay away from your ownselves as to not create Universe ending Paradoxes</p>
@@ -78,7 +77,7 @@
     <section class="main-program">
       <h1>Main Program</h1>
       <hr>
-      <div class="programs-container">
+      <div class="programs-container flex-column-mobile">
         <div class="program-box">
           <i class="fal fa-podium fa-4x"></i>
           <h2>Lecture</h2>
@@ -111,78 +110,94 @@
       <h1>Featured Speakers</h1>
       <hr>
       <div class="speakers-container flex">
-        <div class="speaker-box">
-          <img class="img-fluid float-left" src="./Assets/Media/img/julia_reda_600.jpg" alt="profile">
-          <h3>Yochai Benkler</h3>
-          <p class="special-p">
-            Profesor of blah blah blah 
-          </p>
-          <hr>
-          <p>Benkler studies blah blah blah blah</p>
+        <div class="speaker-box flex">
+          <div class="speaker-img-box flex">
+            <div class="speaker-bg-box"></div>
+            <img src="./Assets/Media/img/julia_reda_600.jpg" alt="profile">
+          </div>
+          <div>
+            <h3>Yochai Benkler</h3>
+            <p class="special-p">
+              Profesor of blah blah blah 
+            </p>
+            <hr>
+            <p>Benkler studies blah blah blah blah</p>
+          </div>
         </div>
-        <div class="speaker-box">
-          <img class="img-fluid float-left" src="./Assets/Media/img/KilnamChonPortrait.jpg" alt="profile">
-          <h3>Yochai Benkler</h3>
-          <p class="special-p">
-            Profesor of blah blah blah 
-          </p>
-          <hr>
-          <p>Benkler studies blah blah blah blah</p>
+        <div class="speaker-box flex">
+          <img class="float-left" src="./Assets/Media/img/KilnamChonPortrait.jpg" alt="profile">
+          <div>
+            <h3>Yochai Benkler</h3>
+            <p class="special-p">
+              Profesor of blah blah blah 
+            </p>
+            <hr>
+            <p>Benkler studies blah blah blah blah</p>
+          </div>
         </div>
-        <div class="speaker-box">
+        <div class="speaker-box flex">
           <img class="img-fluid float-left" src="./Assets/Media/img/Lila_Tretikov_600.jpg" alt="">
-          <h3>Yochai Benkler</h3>
-          <p class="special-p">
-            Profesor of blah blah blah 
-          </p>
-          <hr>
-          <p>Benkler studies blah blah blah blah</p>
+          <div>
+            <h3>Yochai Benkler</h3>
+            <p class="special-p">
+              Profesor of blah blah blah 
+            </p>
+            <hr>
+            <p>Benkler studies blah blah blah blah</p>
+          </div>
         </div>
-        <div class="speaker-box">
+        <div class="speaker-box flex">
           <img class="img-fluid float-left" src="./Assets/Media/img/ryan_merkley_600.jpg" alt="">
-          <h3>Yochai Benkler</h3>
-          <p class="special-p">
-            Profesor of blah blah blah 
-          </p>
-          <hr>
-          <p>Benkler studies blah blah blah blah</p>
+          <div>
+            <h3>Yochai Benkler</h3>
+            <p class="special-p">
+              Profesor of blah blah blah 
+            </p>
+            <hr>
+            <p>Benkler studies blah blah blah blah</p>
+          </div>
         </div>
-        <div class="speaker-box">
+        <div class="speaker-box flex">
           <img class="img-fluid float-left" src="./Assets/Media/img/soh-yeong-roh_blog.jpg" alt="">
-          <h3>Yochai Benkler</h3>
-          <p class="special-p">
-            Profesor of blah blah blah 
-          </p>
-          <hr>
-          <p>Benkler studies blah blah blah blah</p>
+          <div>
+            <h3>Yochai Benkler</h3>
+            <p class="special-p">
+              Profesor of blah blah blah 
+            </p>
+            <hr>
+            <p>Benkler studies blah blah blah blah</p>
+          </div>
         </div>
-        <div class="speaker-box">
+        <div class="speaker-box flex">
           <img class="img-fluid float-left" src="./Assets/Media/img/yochai_benkler_600.jpg" alt="profile">
-          <h3>Yochai Benkler</h3>
-          <p class="special-p">
-            Profesor of blah blah blah 
-          </p>
-          <hr>
-          <p>Benkler studies blah blah blah blah</p>
+          <div>
+            <h3>Yochai Benkler</h3>
+            <p class="special-p">
+              Profesor of blah blah blah 
+            </p>
+            <hr>
+            <p>Benkler studies blah blah blah blah</p>
+          </div>
         </div>
+        <button class="more-btn">More <i class="fas fa-chevron-down color-prim"></i></button>
       </div>
     </section>
     <section class="partners">
       <h1>Partners</h1>
       <hr>
       <div class="flex logo-container">
-        <img class="img-fluid" src="" alt="logo">
-        <img class="img-fluid" src="" alt="logo">
-        <img class="img-fluid" src="" alt="logo">
-        <img class="img-fluid" src="" alt="logo">
-        <img class="img-fluid" src="" alt="logo">
+        <i class="fab fa-firefox-browser fa-5x"></i>
+        <i class="fab fa-google fa-5x"></i>
+        <i class="fab fa-slack fa-5x"></i>
+        <i class="fab fa-drupal fa-5x"></i>
+        <i class="fab fa-airbnb fa-5x"></i>
       </div>
     </section>
   </main>
   <footer>
-    <div class="flex footer-container">
+    <div class="flex-column-mobile footer-container">
       <div>
-        <img class="img-fluid" src="" alt="logo">
+        <img class="img-fluid" src="./Assets/Media/img/logo_transparent.png" alt="logo">
       </div>
       <div class="footer-info">
         <h2>2015 Creative Commons Korea</h2>

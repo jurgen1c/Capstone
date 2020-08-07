@@ -1,25 +1,44 @@
 /* --------------------------- Nav Bar ------------------- */
 
+#special-link {
+  border: 2px solid $primary-color;
+  width: 200px;
+  text-align: center;
+  &:hover {
+    border-radius: 5px;
+    transition: ease-in-out 1s;
+    margin: 0 2rem;
+  }
+  a {
+    color: $primary-color;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
 .navbar {
+  font-family: $secondary-font;
   z-index: 999;
   width: 100%;
   margin: 0;
-  padding: 0 1rem;
-  justify-content: space-between;
-  align-items: center;
+  padding: .5rem 4rem;
   color: $primary-color;
+  justify-content: space-between;
   li {
     display: inline-block;
-    margin: 0 0.5rem;
+    margin: 0 1rem;
     padding: 0.5rem;
-    border: 1px solid $primary-color;
+    align-items: center;
     border-radius: 5px;
     &:hover {
+      transition: ease .5s;
       background: $primary-color;
+      color: $secondary-color;
       border-radius: 5px;
-      transform: scale(1.5);
+      transform: scale(1.1);
       margin: 0 1.5rem;
-      padding: 0 1rem;
+      padding: auto .5rem;
     }
   }
   a{
@@ -32,7 +51,7 @@
   button {
     color: $primary-color;
     background: none;
-    border: none;
+    border: 1px solid $secondary-color;
   }
   @include responsive {
     button {
@@ -54,19 +73,16 @@
   }
 }
 
-.special-link {
-  border: 2px solid $secondary-color;
-  width: 200px;
-  text-align: center;
-  &:hover {
-    margin: 0 2rem;
+.nav-links {
+  display: none;
+  @include responsive {
+    display: block;
   }
-  a {
-    color: $primary-color;
-    &:hover {
-      color: $secondary-color;
-    }
-  }
+}
+
+.about-subnav {
+  margin: 1rem 1rem 1rem auto;
+  background: transparent;
 }
 
 /* ---------------- Hero Graphic -------------------- */
@@ -87,9 +103,10 @@
     top: 25%;
     left: 0;
     right: 0;
+    -webkit-text-stroke: 1px $secondary-color;
     font-size: 3rem;
     font-family: myFirstFont;
-    color: $secondary-color;
+    color: $primary-color;
     text-shadow: darken($color: #000000, $amount: 0);
   }
   button {
@@ -123,7 +140,7 @@
     }
   }
   @include responsive {
-    margin: 1rem auto 0 20rem;
+    margin: 1rem auto 0 15rem;
     h1 {
       font-size: 7rem;
       top: 30%;
@@ -181,10 +198,116 @@
   }
 }
 
+/* ---------------------- Tickets Table --------------------------- */
+
+.step-box {
+  width: 55% !important;
+  text-align: left;
+  padding: 2rem;
+  border-radius: 25px;
+  border: 1px solid $secondary-color;
+}
+
+.table-bg {
+  padding: .8rem;
+  width: 70%;
+  background: repeating-linear-gradient(45deg, $secondary-color, $secondary-color 5px,
+   $primary-color 5px, $primary-color 10px,
+   $terciary-color 10px, $terciary-color 15px);
+}
+
+.table {
+  border-collapse: collapse;
+  font-family: $secondary-font;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  background: white;
+  td {
+    padding: 1.5rem;
+  }
+  th {
+    padding: 1.5rem;
+  }
+}
+
+table, th, td {
+  border: 1px solid $secondary-color;
+}
+
+.ticket-btn-container {
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 75%;
+  padding: 3rem;
+  button {
+    width: 33%;
+    height: 10rem;
+    font-family: myFirstFont;
+    font-size: 2.5rem;
+    background: $secondary-color;
+    color: $primary-color;
+    border-radius: 5px;
+  }
+}
+
+#square {
+  text-align: center;
+  margin: 4rem auto;
+  width: 70px;
+  height: 70px;
+  background: $secondary-color;
+  border: none;
+  transform: rotate(45deg);
+  i {
+    margin: 38% auto auto 9%;
+    color: $primary-color;
+    border: none;
+    transform: rotate(-45deg);
+  }
+}
+
+/* ----------------------- About Info ----------------------------- */
+
+.about-info {
+  font-size: 1rem;
+  width: 90%;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  background: lighten($color: $terciary-color, $amount: 50%);
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
+  border-radius: 10px;
+  @include responsive {
+    width: 70%;
+    padding: 3rem;
+    font-size: 2rem;
+  }
+}
+
+/* ------------------------- Branding Info ------------------------- */
+
+.branding-info {
+  margin: 2rem auto;
+  hr {
+    border: 1px solid $primary-color;
+  }
+  h2 {
+    margin: 2rem auto;
+    font-size: 2rem;
+    color: $secondary-color;
+  }
+  p {
+    font-size: 1.1rem;
+    color: $secondary-color;
+    margin: 1rem auto;
+  }
+}
+
 /* ---------------------- Program Container ------------------------- */
 
 .programs-container {
-  display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 95%;
@@ -192,14 +315,14 @@
   @include responsive {
     flex-direction: row;
     width: 85%;
+    padding: 3rem;
   }
 }
 
 .program-box {
-  display: flex;
   color: white;
   width: 100%;
-  height: 50px;
+  height: fit-content;
   padding: 1rem;
   border-radius: 2px;
   background-color: rgba(233, 233, 233, 0.1);
@@ -209,49 +332,175 @@
       color: $primary-color;
     }
   }
+  h2 {
+    margin: 1rem 0;
+  }
   @include responsive {
-    flex-direction: column;
     text-align: center;
     width: 20%;
-    height: 300px;
+    height: 250px;
+  }
+}
+
+/* ------------------------- Brand Logo -----------------------*/
+
+.brand-logo {
+  padding: 1rem;
+  border: solid 1px $terciary-color;
+  img {
+    width: 30%;
+    height: 30%;
   }
 }
 
 /* ------------------------ Speaker Box --------------------- */
 
 .speaker-box {
-  width: 50%;
-  height: 33%;
-  img {
-    width: 50px;
-    height: 70px;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  h3 {
+    font-size: 1.2rem;
   }
   &:hover {
     position: relative;
-    background: $primary-color;
+    background: $secondary-color;
     color: $terciary-color;
-    border-radius: 50%;
-    width: 450px;
-    height: 450px;
-    img {
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      width: 25%;
-      height: 25%;
+    border-radius: 15px;
+    height: 300%;
+    h3 {
+      font-size: 1.5rem;
     }
+  }
+  @include responsive {
+    width: 50%;
+    text-align: left;
+    padding: 2rem;
+    img {
+      width: 20rem;
+      height: 20rem;
+      top: 20%;
+      left: 35%;
+    }
+    h3 {
+      font-size: 3rem;
+    }
+    &:hover {
+      text-align: end;
+      padding: 2rem;
+      width: 50%;
+      height: 25rem;
+    }
+  }
+}
+
+.speaker-img-box {
+  position: relative;
+  justify-content: flex-end;
+  @include responsive {
+    img {
+      display: block;
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      width: 50%;
+      height: 50%;
+    }
+    &:hover {
+      img {
+        top: -10%;
+        left: 10%;
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+.speaker-bg-box {
+  display: none;
+  @include responsive {
+    display: flex;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-image: linear-gradient(45deg, #808080 25%, transparent 25%), linear-gradient(-45deg, #808080 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #808080 75%), linear-gradient(-45deg, transparent 75%, #808080 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.special-p {
+  color: $primary-color;
+  font-size: 1.5rem;
+  font-family: $secondary-font;
+  font-weight: bolder;
+}
+
+/* ------------------- Menu Picking ---------------------------- */
+
+.menu-container {
+  border-radius: 2px;
+  border: 1px solid $terciary-color;
+  background: linear-gradient(lighten($terciary-color,15%), lighten($terciary-color, 20%) 20%, white 20%, white);
+}
+
+.menu-box {
+  width: 20%;
+  padding: 4rem;
+}
+
+/* -------------------- Past Content ---------------------------- */
+
+.past-container {
+  width: 100%;
+  margin: 5rem auto;
+}
+
+.past-box {
+  width: 80%;
+  margin: 1rem auto;
+  height: 200px;
+  background: url(),
+  linear-gradient(to bottom, $primary-color, lighten($primary-color, 50%));
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include responsive {
+    width: 30%;
+    height: 300px;
+  }
+}
+
+.past-box-1 {
+  width: 80%;
+  margin: 1rem auto;
+  height: 200px;
+  background: url(),
+  linear-gradient(to bottom, $primary-color, lighten($primary-color, 50%));
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include responsive {
+    width: 30%;
+    height: 300px;
   }
 }
 
 /* ------------------- Partner Logo Container -------------------- */
 
 .logo-container {
-  width: 75%;
+  width: 70%;
+  height: 50%;
   margin: 1rem auto;
-  justify-content: space-evenly;
-  img {
-    width: 100px;
-    height: 50px;
+  justify-content: center;
+  i {
+    margin: 2rem 3rem;
+  }
+  
+  @include responsive {
+    margin: 10rem auto 2rem auto;
+    justify-content: space-evenly;
   }
 }
 
@@ -259,16 +508,31 @@
 
 .footer-container {
   margin: 2rem auto;
-  text-align: justify;
-  width: 60%;
+  justify-content: center;
+  width: 100%;
   div{
-    margin: 1rem;
+    margin: 0;
   }
   img {
     width: 30%;
   }
 }
 
+.footer-media {
+  text-align: right;
+  width: 50%;
+  padding: 0 2rem 0 0;
+  a {
+    color: $terciary-color;
+  }
+}
+
 .footer-info {
-  width: 70%;
+  width: 50%;
+  text-align: left;
+  padding: 0 0 0 2rem;
+  color: $terciary-color;
+  p {
+    width: 60%;
+  }
 }

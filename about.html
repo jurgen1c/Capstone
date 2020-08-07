@@ -9,10 +9,10 @@
   <title>ITC About</title>
 </head>
 <body>
-  <header class="sticky-top">
-    <div class="row account-nav">
+  <header>
+    <div class="account-nav">
       <nav>
-        <ul class="d-inline-flex">
+        <ul class="flex-column-mobile">
           <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
           <li><a href=""><i class="fab fa-twitter"></i></a></li>
           <li><a href="">English</a></li>
@@ -21,34 +21,38 @@
         </ul>
       </nav>
     </div>
-    <div class="row main-nav">
-      <nav class="navbar navbar-expand-lg col-12 justify-content-between">
-        <a class="navbar-brand d-none d-lg-block" href="index.html"><img src="Assets/Media/kisspng-portal-download-portal-transparent-png-5a71f517810614.3650984215174177515285.png" alt="logo"></a>
+    <div class="main-nav">
+      <nav class="navbar flex-column-mobile">
+        <div class="navbar-brand">
+          <a href="#">
+            <i class="fas fa-infinity fa-2x"></i>
+          </a>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars fa-2x"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item d-lg-none d-block">
-              <a href="index.html" class="nav-link">Home</a>
+        <div class="nav-links">
+          <ul class="navbar-nav flex-column-mobile">
+            <li class="">
+              <a href="index.html" class="">Home</a>
+            </li>
+            <li class="">
+              <a href="./about.html" class="">About</a>
+            </li>
+            <li class="">
+              <a href="program.html" class="">Program</a>
+            </li>
+            <li class="">
+              <a href="./tickets.html" class="">Join</a>
             </li>
             <li class="nav-item">
-              <a href="./about.html" class="nav-link">About</a>
+              <a href="#" class="">Sponsor</a>
             </li>
             <li class="nav-item">
-              <a href="program.html" class="nav-link">Program</a>
+              <a href="#" class="">News</a>
             </li>
-            <li class="nav-item">
-              <a href="./tickets.html" class="nav-link">Join</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Sponsor</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">News</a>
-            </li>
-            <li class="nav-item special-link">
-              <a href="#" class="nav-link">CC Campaign</a>
+            <li class=" special-link">
+              <a href="#" class="">CC Campaign</a>
             </li>
           </ul>
         </div>
@@ -56,7 +60,7 @@
     </div>
   </header>
   <main>
-    <nav class="about-subnav">
+    <nav class="about-subnav flex">
       <ul>
         <li><a href=""><i class="fas fa-home"></i></a></li>
         <li><a href=""><i class="fas fa-home"></i></a></li>
@@ -65,7 +69,7 @@
     </nav>
     <section class="about-hero">
       <h1>Endless Timetraveller Conference</h1>
-      <div>
+      <div class="about-info">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ipsa voluptates blanditiis? 
           Quae, expedita ea. Itaque deserunt consequatur incidunt, quia quisquam veniam, a voluptatem 
@@ -73,44 +77,61 @@
           exercitationem, quaerat ea quam deserunt dicta quod? Consequatur quisquam aperiam aliquid quibusdam consectetur!
         </p>
       </div>
-      <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi neque quas possimus sapiente iusto nam!</p>
-        <a href="">info_etc@infinity.org</a>
-      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi neque quas possimus sapiente iusto nam!</p>
+      <a href="">info_etc@infinity.org</a>
     </section>
-    <section >
-      <div>
+    <section class="branding">
+      <div class="branding-info">
         <h2>Lorem ipsum dolor sit amet consectetur.</h2>
         <hr>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Cumque dolorum ullam reprehenderit dolorem ratione praesentium!</p>
       </div>
-      <div>
-        <img src="" alt="">
+      <div class="brand-logo">
+        <a href="#">
+          <img src="./Assets/Media/img/logo_transparent.png" alt="logo">
+        </a>
       </div>
     </section>
-    <section class="past flex-column">
+    <section class="past">
       <div>
         <h3>Lorem ipsum dolor sit amet.</h3>
         <hr>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, illum.</p>
       </div>
-      <div class="flex">
-        <div class="past-container">
-          <h1>2014</h1>
-          <h5>ETC Buenos Aires</h5>
-        </div>
-        <div class="past-container-1">
-          <h1>2014</h1>
-          <h5>ETC Buenos Aires</h5>
-        </div>
+      <div class="flex-column-mobile past-container">
+        <a class="past-box" href="">
+          <div>
+            <h1>2014</h1>
+            <h5>ETC Buenos Aires</h5>
+          </div>
+        </a>
+        <a class="past-box-1" href="">
+          <div>
+            <h1>2014</h1>
+            <h5>ETC Buenos Aires</h5>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="partners d-none-dk">
+      <h1>Partners</h1>
+      <hr>
+      <div class="flex logo-container">
+        <i class="fab fa-firefox-browser fa-5x"></i>
+        <i class="fab fa-google fa-5x"></i>
+        <i class="fab fa-slack fa-5x"></i>
+        <i class="fab fa-drupal fa-5x"></i>
+        <i class="fab fa-airbnb fa-5x"></i>
       </div>
     </section>
   </main>
   <footer class="footer-1">
-    <div class="flex footer-container">
-      <div>
-        <img class="img-fluid" src="" alt="logo">
+    <div class="flex-column-mobile footer-container">
+      <div class="footer-media">
+        <a href="">
+          <i class="fas fa-infinity fa-4x"></i>
+        </a>
       </div>
       <div class="footer-info">
         <h2>2015 Creative Commons Korea</h2>

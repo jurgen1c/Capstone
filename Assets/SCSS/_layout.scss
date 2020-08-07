@@ -4,30 +4,31 @@
 .account-nav {
   display: none;
   width: 100%;
-  background: $secondary-color;
-  height: 25px;
+  background: $primary-color;
+  height: fit-content;
   font-size: 1.5rem;
   font-family: $secondary-font;
-  padding: 0;
+  padding: 1rem;
+  align-items: flex-end;
   a {
-    color: white;
+    color: $secondary-color;
     margin: 1rem 1rem 1rem 0;
   }
   a:hover {
     color: $terciary-color;
-    font-size: 2rem;
   }
   @include responsive {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
   } 
 }
 
 .main-nav {
-  background: transparent !important;
+  background: transparent;
   position: sticky;
   height: 50px;
   @include responsive {
-    background: linear-gradient($secondary-color, rgba(0, 0, 0, 0))!important;
+    background: $secondary-color;
     font-size: 1.8rem;
     padding: 0;
     width: 100vw;
@@ -42,9 +43,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 1rem 0;
+  padding: 6rem 0 1rem 0;
   text-align: center;
-  height: fit-content;
+  height: 75rem;
   >h1 {
     font-size: 3rem;
     font-family: myFirstFont;
@@ -61,7 +62,8 @@
     line-height: 1.6;
   }
   @include responsive {
-    padding: 2rem 0;
+    padding: 10rem 0 1rem 0;
+    height: 100rem;
     text-align: justify;
     >h1 {
       font-size: 4rem;
@@ -74,6 +76,65 @@
       margin: 0 25rem;
       font-size: 3rem;
     }
+  }
+}
+
+/* ------------------------ About Hero ---------------------- */
+
+.about-hero {
+  z-index: 1;
+  background: url("../Media/img/CATMEDIA-SPACE-Background.jpg");
+  background-size: cover;
+  background-position: bottom;
+  padding: 3rem 0;
+  height: fit-content;
+  opacity: 1;
+  text-align: center;
+  >h1 {
+    color: $primary-color;
+    -webkit-text-stroke: 1px $secondary-color;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    width: 80%;
+  }
+  >p {
+    color: $terciary-color;
+    font-size: 2rem;
+    margin: 1rem auto;
+    width: 80%;
+  }
+  a {
+    color: $terciary-color;
+    font-size: 2rem;
+    width: 20%;
+    margin: 1rem auto;
+    text-align: center;
+  }
+  @include responsive {
+    h1 {
+      margin: 3rem auto;
+      font-size: 6rem;
+    }
+  }
+}
+
+/* -------------------- Select Tickets ----------------- */
+
+.select-tickets {
+  text-align: center;
+  padding: 10rem 0 2rem 0;
+  color: $secondary-color;
+  >div {
+    margin: 2rem auto;
+    width: 75%;
+  }
+  h1 {
+    font-family: $secondary-font;
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+  hr{
+    border: 1px solid $primary-color;
   }
 }
 
@@ -96,14 +157,52 @@
   }
 }
 
+/* ------------------- Branding ---------------------------- */
+
+.branding {
+  height: fit-content;
+  text-align: center;
+  border-bottom: 1px solid $terciary-color;
+  padding: 3rem;
+  img {
+    width: 30%;
+  };
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  div {
+    margin: 0 auto;
+  }
+}
+
 /* ------------------- Featured Speakers -------------------- */
 
 .featured-speakers {
-  text-align: center;
-  color: $primary-color;
+  text-align: left;
+  color: $secondary-color;
   height: fit-content;
   h1 {
     margin: 1rem 0;
+  }
+  > hr {
+    border: 1px solid $primary-color;
+    height: 2px;
+  }
+  @include responsive {
+    text-align: center;
+  }
+}
+
+/* --------------------- Past -------------------------------- */
+
+.past {
+  width: 100%;
+  text-align: center;
+  div {
+    margin: 3rem auto;
   }
 }
 
@@ -111,15 +210,21 @@
 
 .partners {
   text-align: center;
-  background: $primary-color;
+  background: $secondary-color;
   color: $terciary-color;
-  padding: 3rem;
+  padding: 5rem 0;
   height: fit-content;
 }
 
 /* ----------------------- Footer ------------------------ */
 
 .footer-1 {
-  background-color: $primary-color;
-  color: white;
+  height: 100%;
+  padding: 3rem;
+  background: white;
+  color: $secondary-color;
+  @include responsive {
+    background-color: $secondary-color;
+    color: white;
+  }
 }

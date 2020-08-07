@@ -16,6 +16,7 @@ main {
 }
 
 header {
+  z-index: 1000;
   position: fixed;
   top: 0;
 }
@@ -25,7 +26,7 @@ h1, h2, h3 {
 }
 
 h4, h5, h6, p {
-  font-family: 'Lato', sans-serif;
+  font-family: $secondary-font;
 }
 
 hr {
@@ -45,12 +46,57 @@ ul {
   list-style: none;
 }
 
-.flex {
-  display: flex;
-  flex-flow: row wrap;
+/* ----------------------- Framework -------------------------- */ 
+
+.color-prim {
+  color: $primary-color;
 }
 
-.flex-column {
+.color-prim-br {
+  background: $primary-color;
+}
+
+.d-none-dk {
+  display: block;
+  @include responsive {
+    display: none;
+  }
+}
+
+.d-none-mob {
+  display: none;
+  @include responsive {
+    display: block;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-mobile {
+  display: flex;
+  flex-flow: row wrap;
+  @include responsive {
+    flex-flow: column wrap;
+  }
+}
+
+.flex-column-mobile {
   display: flex;
   flex-flow: column wrap;
+  @include responsive {
+    flex-flow: row wrap;
+  }
+}
+
+.more-btn {
+  background: white;
+  border: 1px solid $terciary-color;
+  color: $secondary-color;
+  font-size: 1.3rem;
+  @include responsive {
+    display: none;
+  }
 }
