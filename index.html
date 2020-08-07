@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./Assets/CSS/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/cf19c7517f.js" crossorigin="anonymous"></script>
   <title>ITC Global</title>
 </head>
 <body>
-  <header class="sticky-top container-fluid">
+  <header class="fixed-top container-fluid">
     <div class="row account-nav">
       <nav>
-        <ul class="d-inline-flex">
+        <ul class="flex">
           <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
           <li><a href=""><i class="fab fa-twitter"></i></a></li>
           <li><a href="">English</a></li>
@@ -22,36 +21,38 @@
         </ul>
       </nav>
     </div>
-    <div class="row main-nav justify-content-between">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand d-none d-lg-block" href="#">
-          <i class="fas fa-infinity fa-3x">ITC Global</i>
-        </a>
+    <div class="main-nav">
+      <nav class="navbar flex">
+        <div class="navbar-brand">
+          <a href="#">
+            <i class="fas fa-infinity fa-2x"></i>
+          </a>
+        </div>
         <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars fa-2x"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item d-lg-none d-block">
-              <a href="index.html" class="nav-link">Home</a>
+        <div class="nav-links">
+          <ul class="navbar-nav">
+            <li class="">
+              <a href="index.html" class="">Home</a>
+            </li>
+            <li class="">
+              <a href="./about.html" class="">About</a>
+            </li>
+            <li class="">
+              <a href="program.html" class="">Program</a>
+            </li>
+            <li class="">
+              <a href="./tickets.html" class="">Join</a>
             </li>
             <li class="nav-item">
-              <a href="./about.html" class="nav-link">About</a>
+              <a href="#" class="">Sponsor</a>
             </li>
             <li class="nav-item">
-              <a href="program.html" class="nav-link">Program</a>
+              <a href="#" class="">News</a>
             </li>
-            <li class="nav-item">
-              <a href="./tickets.html" class="nav-link">Join</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Sponsor</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">News</a>
-            </li>
-            <li class="nav-item special-link">
-              <a href="#" class="nav-link">CC Campaign</a>
+            <li class=" special-link">
+              <a href="#" class="">CC Campaign</a>
             </li>
           </ul>
         </div>
@@ -79,26 +80,26 @@
       <hr>
       <div class="programs-container">
         <div class="program-box">
-          
+          <i class="fal fa-podium fa-4x"></i>
           <h2>Lecture</h2>
           <p>Listen to the speakers from several times about paradoxes and grandfathers</p>
         </div>
-        <div class="program-box flex-column">
-          <img src="" alt="">
+        <div class="program-box">
+          <i class="fal fa-send-backward fa-4x"></i>
           <h2>Lecture</h2>
           <p>Listen to the speakers from several times about paradoxes and grandfathers</p>
         </div>
-        <div class="program-box flex-column">
-          <img src="" alt="">
+        <div class="program-box">
+          <i class="far fa-comments fa-4x"></i>
+          <h2>Forum</h2>
+          <p>Have the time to share your thoughts and opinions with experts for each topic</p>
+        </div>
+        <div class="program-box">
+          <i class="fab fa-presentation fa-4x"></i>
           <h2>Lecture</h2>
           <p>Listen to the speakers from several times about paradoxes and grandfathers</p>
         </div>
-        <div class="program-box flex-column">
-          <i class="far fa-presentation fa-4x"></i>
-          <h2>Lecture</h2>
-          <p>Listen to the speakers from several times about paradoxes and grandfathers</p>
-        </div>
-        <div class="program-box flex-column">
+        <div class="program-box">
           <i class="fab fa-battle-net fa-4x"></i>
           <h2>Lecture</h2>
           <p>Listen to the speakers from several times about paradoxes and grandfathers</p>
@@ -190,8 +191,5 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

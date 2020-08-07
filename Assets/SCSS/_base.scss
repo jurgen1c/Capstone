@@ -1,1 +1,56 @@
-@import './_abstracts';
+@import './abstracts';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  max-width: 1800px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+h1, h2, h3 {
+  font-family: myFirstFont;
+}
+
+h4, h5, h6, p {
+  font-family: 'Lato', sans-serif;
+}
+
+hr {
+  width: 40px;
+  background: $secondary-color;
+  margin: 1rem auto;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column wrap;
+}

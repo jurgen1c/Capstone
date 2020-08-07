@@ -1,1 +1,125 @@
-@import './_abstracts';
+
+/* ----------------------------- Header ---------------------------- */
+
+.account-nav {
+  display: none;
+  width: 100%;
+  background: $secondary-color;
+  height: 25px;
+  font-size: 1.5rem;
+  font-family: $secondary-font;
+  padding: 0;
+  a {
+    color: white;
+    margin: 1rem 1rem 1rem 0;
+  }
+  a:hover {
+    color: $terciary-color;
+    font-size: 2rem;
+  }
+  @include responsive {
+    display: block;
+  } 
+}
+
+.main-nav {
+  background: transparent !important;
+  position: sticky;
+  height: 50px;
+  @include responsive {
+    background: linear-gradient($secondary-color, rgba(0, 0, 0, 0))!important;
+    font-size: 1.8rem;
+    padding: 0;
+    width: 100vw;
+    margin: 0;
+  }
+}
+
+/* ------------------------- Hero section --------------------------- */
+
+.home-hero {
+  background: url("../Media/img/CATMEDIA-SPACE-Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem 0;
+  text-align: center;
+  height: fit-content;
+  >h1 {
+    font-size: 3rem;
+    font-family: myFirstFont;
+    margin: 2rem 0 0 0;
+    color: $terciary-color;
+  }
+  h2 {
+    color: $terciary-color;
+  }
+  p {
+    font-size: 2rem;
+    color: $secondary-color;
+    margin: 0.5rem;
+    line-height: 1.6;
+  }
+  @include responsive {
+    padding: 2rem 0;
+    text-align: justify;
+    >h1 {
+      font-size: 4rem;
+      margin: 2rem auto 0 15rem;
+    }
+    h2 {
+      margin: 0 auto 0 47%;
+    }
+    p {
+      margin: 0 25rem;
+      font-size: 3rem;
+    }
+  }
+}
+
+/* ------------------- Main Program --------------------- */
+
+.main-program {
+  text-align: center;
+  height: fit-content;
+  background: $secondary-color;
+  color: white;
+  padding: 1rem 0;
+  a {
+    color: white;
+    font-size: 2rem;
+    border-bottom: 1px solid white;
+    margin: 5rem 0;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+/* ------------------- Featured Speakers -------------------- */
+
+.featured-speakers {
+  text-align: center;
+  color: $primary-color;
+  height: fit-content;
+  h1 {
+    margin: 1rem 0;
+  }
+}
+
+/* -------------------- Partners ------------------------------- */
+
+.partners {
+  text-align: center;
+  background: $primary-color;
+  color: $terciary-color;
+  padding: 3rem;
+  height: fit-content;
+}
+
+/* ----------------------- Footer ------------------------ */
+
+.footer-1 {
+  background-color: $primary-color;
+  color: white;
+}

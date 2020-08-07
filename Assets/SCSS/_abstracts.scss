@@ -1,8 +1,7 @@
-/* ------------- Variables -----------------------*/
 
-$primary-color: #272A31;
-$secondary-color: #EC5242;
-$terciary-color: #D3D3D3;
+$primary-color: rgb(248, 187, 75);
+$secondary-color: rgb(0, 18,41);
+$terciary-color: rgb(144,191,253);
 
 @font-face {
   font-family: myFirstFont;
@@ -11,8 +10,6 @@ $terciary-color: #D3D3D3;
 $secondary-font: 'Lato', sans-serif;
 
 $break: 769px;
-
-/* ------------- Media ------------------*/
 
 @mixin responsive {
   @media only screen and (min-width: $break) {

@@ -1,16 +1,18 @@
-/* ------------- Variables -----------------------*/
 @font-face { font-family: myFirstFont; src: url("../Media/Fonts/Cocogoose Pro-trial.ttf"); }
 
-/* ------------- Media ------------------*/
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-html { font-size: 62.5%; }
+html { font-size: 62.5%; overflow-x: hidden; }
+
+main { width: 100%; max-width: 1800px; }
+
+header { position: fixed; top: 0; }
 
 h1, h2, h3 { font-family: myFirstFont; }
 
 h4, h5, h6, p { font-family: 'Lato', sans-serif; }
 
-hr { width: 40px; background: #EC5242; margin: 1rem auto; }
+hr { width: 40px; background: #001229; margin: 1rem auto; }
 
 a { text-decoration: none; }
 
@@ -22,72 +24,45 @@ ul { list-style: none; }
 
 .flex-column { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column wrap; flex-flow: column wrap; }
 
-/* ------------- Header ------------------------- */
-.account-nav { width: 100vw; background: #272A31; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; font-size: 1.5rem; padding: 0; }
+/* --------------------------- Nav Bar ------------------- */
+.navbar { z-index: 999; width: 100%; margin: 0; padding: 0 1rem; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: #f8bb4b; }
 
-.account-nav a { color: white; margin: 0 1rem 0 0; }
+.navbar li { display: inline-block; margin: 0 0.5rem; padding: 0.5rem; border: 1px solid #f8bb4b; border-radius: 5px; }
 
-.account-nav a:hover { color: #EC5242; font-size: larger; }
+.navbar li:hover { background: #f8bb4b; border-radius: 5px; -webkit-transform: scale(1.5); transform: scale(1.5); margin: 0 1.5rem; padding: 0 1rem; }
 
-.main-nav { background: -webkit-gradient(linear, left top, left bottom, from(white), to(#79aed1)); background: linear-gradient(white, #79aed1); -webkit-box-shadow: 3px 3px 5px; box-shadow: 3px 3px 5px; font-size: 1.8rem; padding: 0; width: 100vw; margin: 0; }
+.navbar a { color: #f8bb4b; font-family: "Lato", sans-serif; }
 
-.main-nav nav { width: 100%; margin: 0; }
+.navbar a:hover { color: #001229; }
 
-.main-nav li { margin: 0 0.5rem; }
+.navbar button { color: #f8bb4b; background: none; border: none; }
 
-.main-nav li:hover { background: #272A31; border-radius: 5px; -webkit-transform: scale(1.5); transform: scale(1.5); margin: 0 1.5rem; padding: 0 1rem; }
+@media only screen and (min-width: 769px) { .navbar button { display: none; } }
 
-.main-nav a { color: #EC5242; }
+.navbar-brand { display: none; }
 
-.main-nav a:hover { color: #D3D3D3; }
+@media only screen and (min-width: 769px) { .navbar-brand { display: block; }
+  .navbar-brand i { color: #f8bb4b; }
+  .navbar-brand i:hover { font-size: xx-large; } }
 
-.main-nav img { width: 10%; height: 10%; }
+.special-link { border: 2px solid #001229; width: 200px; text-align: center; }
 
-.main-nav .special-link { border: 2px solid #EC5242; width: 200px; text-align: center; }
+.special-link:hover { margin: 0 2rem; }
 
-.main-nav .special-link:hover { margin: 0 2rem; }
+.special-link a { color: #f8bb4b; }
 
-.main-nav .special-link a { color: #272A31; }
+.special-link a:hover { color: #001229; }
 
-.main-nav .special-link a:hover { color: #EC5242; }
-
-.navbar-brand i { color: #EC5242; z-index: 1; }
-
-.navbar-brand h1 { color: #EC5242; z-index: 2; font-size: 1.3rem; }
-
-.navbar-brand h3 { font-size: 1.2rem; color: #EC5242; }
-
-.navbar-brand i:hover { color: #272A31; }
-
-/* --------------------- Header Media Queries ------------------- */
-@media only screen and (m-width: 768px) { .account-nav { display: none; }
-  .main-nav { background: transparent !important; -webkit-box-shadow: none; box-shadow: none; }
-  .navbar-toggler { border: none; outline: none; }
-  .navbar-toggler:active { outline: none; border: none; } }
-
-/* -------------------- Home-Hero ---------------------- */
-.home-hero { background: url("../Media/img/CATMEDIA-SPACE-Background.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center; padding: 1rem 0; text-align: center; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
-
-.home-hero > h1 { font-size: 3rem; font-family: myFirstFont; margin: 2rem 0 0 0; color: #D3D3D3; }
-
-.home-hero h2 { color: #D3D3D3; }
-
-.home-hero p { font-size: 2rem; color: #EC5242; margin: 0.5rem; line-height: 1.6; }
-
-@media only screen and (min-width: 769px) { .home-hero { padding: 2rem 0; text-align: justify; }
-  .home-hero > h1 { font-size: 4rem; margin: 2rem auto 0 15rem; }
-  .home-hero h2 { margin: 0 auto 0 47%; }
-  .home-hero p { margin: 0 25rem; font-size: 3rem; } }
-
+/* ---------------- Hero Graphic -------------------- */
 .hero-graphic { position: relative; width: 50%; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; margin: 1rem auto; padding: 0.5rem; -webkit-transform: none; transform: none; text-align: center; }
 
-.hero-graphic h1 { z-index: 4; position: absolute; z-index: 2; top: 25%; left: 0; right: 0; font-size: 3rem; font-family: myFirstFont; color: #EC5242; text-shadow: black; }
+.hero-graphic h1 { z-index: 4; position: absolute; z-index: 2; top: 25%; left: 0; right: 0; font-size: 3rem; font-family: myFirstFont; color: #001229; text-shadow: black; }
 
-.hero-graphic button { z-index: 3; position: absolute; top: 40%; left: 35%; display: none; font-size: 2rem; color: #D3D3D3; border: none; border-radius: 5px; }
+.hero-graphic button { z-index: 3; position: absolute; top: 40%; left: 35%; display: none; font-size: 2rem; color: #90bffd; border: none; border-radius: 5px; }
 
 .hero-graphic:hover h1 { display: none; -webkit-transition: ease 1s; transition: ease 1s; }
 
-.hero-graphic:hover button { -webkit-transition: ease-in-out 0.5s; transition: ease-in-out 0.5s; font-family: "Lato", sans-serif; outline: none; display: block; background: #EC5242; width: 100px; height: 50px; }
+.hero-graphic:hover button { -webkit-transition: ease-in-out 0.5s; transition: ease-in-out 0.5s; font-family: "Lato", sans-serif; outline: none; display: block; background: #001229; width: 100px; height: 50px; }
 
 .hero-graphic:hover #thunder { display: block; -webkit-transition: ease-in-out linear 2s; transition: ease-in-out linear 2s; }
 
@@ -110,48 +85,34 @@ ul { list-style: none; }
   50% { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
   100% { -webkit-transform: rotate(360deg) !important; transform: rotate(360deg) !important; } }
 
-/* ---------------------- Main Program -------------------------- */
-.main-program { text-align: center; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; background: #272A31; color: white; padding: 1rem 0; }
-
-.main-program a { color: white; font-size: 2rem; border-bottom: 1px solid white; margin: 5rem 0; }
-
-.main-program a:hover { color: white; }
-
+/* ---------------------- Program Container ------------------------- */
 .programs-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: 0 auto; width: 95%; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
 
 @media only screen and (min-width: 769px) { .programs-container { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; width: 85%; } }
 
 .program-box { display: -webkit-box; display: -ms-flexbox; display: flex; color: white; width: 100%; height: 50px; padding: 1rem; border-radius: 2px; background-color: rgba(233, 233, 233, 0.1); }
 
-.program-box:hover { border: 2px solid #D3D3D3; }
+.program-box:hover { border: 2px solid #f8bb4b; }
 
-.program-box:hover i { color: #EC5242; }
+.program-box:hover i { color: #f8bb4b; }
 
 @media only screen and (min-width: 769px) { .program-box { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; text-align: center; width: 20%; height: 300px; } }
 
-/* ---------------- Featured Speakers ---------------- */
-.featured-speakers { text-align: center; color: #272A31; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
-
-.featured-speakers h1 { margin: 1rem 0; }
-
+/* ------------------------ Speaker Box --------------------- */
 .speaker-box { width: 50%; height: 33%; }
 
 .speaker-box img { width: 50px; height: 70px; }
 
-.speaker-box:hover { position: relative; background: #272A31; color: #D3D3D3; border-radius: 50%; width: 450px; height: 450px; }
+.speaker-box:hover { position: relative; background: #f8bb4b; color: #90bffd; border-radius: 50%; width: 450px; height: 450px; }
 
 .speaker-box:hover img { position: absolute; top: 5px; left: 5px; width: 25%; height: 25%; }
 
-/* ------------------- Partners --------------------------- */
-.partners { text-align: center; background: #272A31; color: #D3D3D3; padding: 3rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
-
+/* ------------------- Partner Logo Container -------------------- */
 .logo-container { width: 75%; margin: 1rem auto; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
 
 .logo-container img { width: 100px; height: 50px; }
 
-/* -------------------- Footer ---------------------------- */
-.footer-1 { background-color: #272A31; color: white; }
-
+/* --------------------- Footer Container -------------------- */
 .footer-container { margin: 2rem auto; text-align: justify; width: 60%; }
 
 .footer-container div { margin: 1rem; }
@@ -160,15 +121,49 @@ ul { list-style: none; }
 
 .footer-info { width: 70%; }
 
-/* ------------- Variables -----------------------*/
-@font-face { font-family: myFirstFont; src: url("../Media/Fonts/Cocogoose Pro-trial.ttf"); }
+/* ----------------------------- Header ---------------------------- */
+.account-nav { display: none; width: 100%; background: #001229; height: 25px; font-size: 1.5rem; font-family: "Lato", sans-serif; padding: 0; }
 
-/* ------------- Media ------------------*/
-/* ------------- Variables -----------------------*/
-@font-face { font-family: myFirstFont; src: url("../Media/Fonts/Cocogoose Pro-trial.ttf"); }
+.account-nav a { color: white; margin: 1rem 1rem 1rem 0; }
 
-/* ------------- Media ------------------*/
-/* ------------- Variables -----------------------*/
-@font-face { font-family: myFirstFont; src: url("../Media/Fonts/Cocogoose Pro-trial.ttf"); }
+.account-nav a:hover { color: #90bffd; font-size: 2rem; }
 
-/* ------------- Media ------------------*/
+@media only screen and (min-width: 769px) { .account-nav { display: block; } }
+
+.main-nav { background: transparent !important; position: -webkit-sticky; position: sticky; height: 50px; }
+
+@media only screen and (min-width: 769px) { .main-nav { background: -webkit-gradient(linear, left top, left bottom, from(#001229), to(rgba(0, 0, 0, 0))) !important; background: linear-gradient(#001229, rgba(0, 0, 0, 0)) !important; font-size: 1.8rem; padding: 0; width: 100vw; margin: 0; } }
+
+/* ------------------------- Hero section --------------------------- */
+.home-hero { background: url("../Media/img/CATMEDIA-SPACE-Background.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center; padding: 1rem 0; text-align: center; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
+
+.home-hero > h1 { font-size: 3rem; font-family: myFirstFont; margin: 2rem 0 0 0; color: #90bffd; }
+
+.home-hero h2 { color: #90bffd; }
+
+.home-hero p { font-size: 2rem; color: #001229; margin: 0.5rem; line-height: 1.6; }
+
+@media only screen and (min-width: 769px) { .home-hero { padding: 2rem 0; text-align: justify; }
+  .home-hero > h1 { font-size: 4rem; margin: 2rem auto 0 15rem; }
+  .home-hero h2 { margin: 0 auto 0 47%; }
+  .home-hero p { margin: 0 25rem; font-size: 3rem; } }
+
+/* ------------------- Main Program --------------------- */
+.main-program { text-align: center; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; background: #001229; color: white; padding: 1rem 0; }
+
+.main-program a { color: white; font-size: 2rem; border-bottom: 1px solid white; margin: 5rem 0; }
+
+.main-program a:hover { color: white; }
+
+/* ------------------- Featured Speakers -------------------- */
+.featured-speakers { text-align: center; color: #f8bb4b; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
+
+.featured-speakers h1 { margin: 1rem 0; }
+
+/* -------------------- Partners ------------------------------- */
+.partners { text-align: center; background: #f8bb4b; color: #90bffd; padding: 3rem; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
+
+/* ----------------------- Footer ------------------------ */
+.footer-1 { background-color: #f8bb4b; color: white; }
+
+@font-face { font-family: myFirstFont; src: url("../Media/Fonts/Cocogoose Pro-trial.ttf"); }
