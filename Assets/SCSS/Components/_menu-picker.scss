@@ -1,0 +1,12 @@
+/* ------------------- Menu Picking ---------------------------- */
+
+.menu-container {
+  border-radius: 2px;
+  border: 1px solid $terciary-color;
+  background: linear-gradient(lighten($terciary-color,15%), lighten($terciary-color, 20%) 20%, white 20%, white);
+}
+
+.menu-box {
+  width: 20%;
+  padding: 4rem;
+}

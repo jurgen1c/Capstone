@@ -1,0 +1,93 @@
+/* ------------------------ Speaker Box --------------------- */
+
+.speaker-box {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  h3 {
+    font-size: 1.2rem;
+  }
+  &:hover {
+    position: relative;
+    background: $secondary-color;
+    color: $terciary-color;
+    border-radius: 15px;
+    height: 300%;
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+  @include responsive {
+    width: 50%;
+    text-align: left;
+    padding: 2rem;
+    img {
+      width: 20rem;
+      height: 20rem;
+      top: 20%;
+      left: 35%;
+    }
+    h3 {
+      font-size: 3rem;
+    }
+    &:hover {
+      text-align: end;
+      padding: 2rem;
+      width: 50%;
+      height: 25rem;
+    }
+  }
+}
+
+.speaker-img-box {
+  position: relative;
+  justify-content: flex-end;
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  @include responsive {
+    img {
+      display: block;
+      position: absolute;
+      top: 3%;
+      left: 17%;
+      width: 250px;
+      height: 250px;
+    }
+    &:hover {
+      img {
+        top: 10%;
+        left: 10%;
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+.speaker-info {
+  width: 100%;
+}
+
+.speaker-bg-box {
+  display: none;
+  @include responsive {
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-image: linear-gradient(45deg, #808080 25%, transparent 25%), linear-gradient(-45deg, #808080 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #808080 75%), linear-gradient(-45deg, transparent 75%, #808080 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.special-p {
+  color: $primary-color;
+  font-size: 1.5rem;
+  font-family: $secondary-font;
+  font-weight: bolder;
+}

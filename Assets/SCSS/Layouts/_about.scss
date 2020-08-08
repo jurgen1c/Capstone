@@ -1,0 +1,69 @@
+/* ------------------------ About Hero ---------------------- */
+
+.about-hero {
+  z-index: 1;
+  background: url("../Media/img/CATMEDIA-SPACE-Background.jpg");
+  background-size: cover;
+  background-position: bottom;
+  padding: 3rem 0;
+  height: fit-content;
+  opacity: 1;
+  text-align: center;
+  >h1 {
+    color: $primary-color;
+    -webkit-text-stroke: 1px $secondary-color;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    width: 80%;
+  }
+  >p {
+    color: $terciary-color;
+    font-size: 2rem;
+    margin: 1rem auto;
+    width: 80%;
+  }
+  a {
+    color: $terciary-color;
+    font-size: 2rem;
+    width: 20%;
+    margin: 1rem auto;
+    text-align: center;
+  }
+  @include responsive {
+    h1 {
+      margin: 3rem auto;
+      font-size: 6rem;
+    }
+  }
+}
+
+/* ------------------- Branding ---------------------------- */
+
+.branding {
+  height: fit-content;
+  text-align: center;
+  border-bottom: 1px solid $terciary-color;
+  padding: 3rem;
+  img {
+    width: 30%;
+  };
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  div {
+    margin: 0 auto;
+  }
+}
+
+/* --------------------- Past -------------------------------- */
+
+.past {
+  width: 100%;
+  text-align: center;
+  div {
+    margin: 3rem auto;
+  }
+}

@@ -1,0 +1,34 @@
+/* -------------------- Past Content ---------------------------- */
+
+.past-container {
+  width: 100%;
+  margin: 5rem auto;
+}
+
+.past-box {
+  width: 80%;
+  margin: 1rem auto;
+  height: 200px;
+  background: url(),
+  linear-gradient(to bottom, $primary-color, lighten($primary-color, 50%));
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include responsive {
+    width: 30%;
+    height: 300px;
+  }
+}
+
+.past-box-1 {
+  width: 80%;
+  margin: 1rem auto;
+  height: 200px;
+  background: url(),
+  linear-gradient(to bottom, $primary-color, lighten($primary-color, 50%));
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include responsive {
+    width: 30%;
+    height: 300px;
+  }
+}

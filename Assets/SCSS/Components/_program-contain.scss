@@ -1,0 +1,45 @@
+/* ---------------------- Program Container ------------------------- */
+
+.programs-container {
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 95%;
+  height: fit-content;
+  @include responsive {
+    flex-direction: row;
+    width: 85%;
+    padding: 3rem;
+  }
+}
+
+.program-box {
+  margin: .15rem;
+  color: white;
+  width: 100%;
+  height: fit-content;
+  padding: 2rem;
+  border-radius: 2px;
+  background-color: rgba(233, 233, 233, 0.1);
+  &:hover {
+    border: 2px solid $primary-color;
+    i {
+      color: $primary-color;
+    }
+  }
+  h2 {
+    margin: 3rem 0 1.5rem 0;
+    font-family: myFirstFont;
+    font-size: 1.5rem;
+    color: $primary-color;
+  }
+  p {
+    font-size: 1.2rem;
+    color: $terciary-color;
+  }
+  @include responsive {
+    text-align: center;
+    width: 19%;
+    height: 250px;
+  }
+}

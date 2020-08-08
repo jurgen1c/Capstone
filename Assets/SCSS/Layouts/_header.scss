@@ -1,0 +1,36 @@
+/* ----------------------------- Header ---------------------------- */
+
+.account-nav {
+  display: none;
+  width: 100%;
+  background: $primary-color;
+  height: fit-content;
+  font-size: 1.5rem;
+  font-family: $secondary-font;
+  padding: 1rem;
+  align-items: flex-end;
+  a {
+    color: $secondary-color;
+    margin: 1rem 1rem 1rem 0;
+  }
+  a:hover {
+    color: $terciary-color;
+  }
+  @include responsive {
+    display: flex;
+    justify-content: flex-end;
+  } 
+}
+
+.main-nav {
+  background: transparent;
+  position: sticky;
+  height: 50px;
+  @include responsive {
+    background: $secondary-color;
+    font-size: 1.8rem;
+    padding: 0;
+    width: 100vw;
+    margin: 0;
+  }
+}

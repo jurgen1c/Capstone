@@ -59,14 +59,14 @@ ul {
 .d-none-dk {
   display: block;
   @include responsive {
-    display: none;
+    display: none !important;
   }
 }
 
 .d-none-mob {
-  display: none;
+  display: none !important;
   @include responsive {
-    display: block;
+    display: flex !important;
   }
 }
 
@@ -91,12 +91,3 @@ ul {
   }
 }
 
-.more-btn {
-  background: white;
-  border: 1px solid $terciary-color;
-  color: $secondary-color;
-  font-size: 1.3rem;
-  @include responsive {
-    display: none;
-  }
-}

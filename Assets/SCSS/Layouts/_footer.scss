@@ -1,0 +1,13 @@
+/* ----------------------- Footer ------------------------ */
+
+.footer-1 {
+  justify-content: center;
+  height: 100%;
+  padding: 3rem;
+  background: white;
+  color: $secondary-color;
+  @include responsive {
+    background-color: $secondary-color;
+    color: white;
+  }
+}

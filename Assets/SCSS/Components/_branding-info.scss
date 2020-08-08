@@ -1,0 +1,18 @@
+/* ------------------------- Branding Info ------------------------- */
+
+.branding-info {
+  margin: 2rem auto;
+  hr {
+    border: 1px solid $primary-color;
+  }
+  h2 {
+    margin: 2rem auto;
+    font-size: 2rem;
+    color: $secondary-color;
+  }
+  p {
+    font-size: 1.1rem;
+    color: $secondary-color;
+    margin: 1rem auto;
+  }
+}

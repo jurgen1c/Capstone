@@ -1,0 +1,112 @@
+/* ---------------- Hero Graphic -------------------- */
+
+.hero-graphic {
+  position: relative;
+  width: 50%;
+  height: fit-content;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  transform: none;
+  text-align: center;
+  
+  h1 {
+    z-index: 4;
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: 0;
+    right: 0;
+    -webkit-text-stroke: 1px $secondary-color;
+    font-size: 3rem;
+    font-family: myFirstFont;
+    color: $primary-color;
+    text-shadow: darken($color: #000000, $amount: 0);
+  }
+  button {
+    z-index: 3;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    display: none;
+    font-size: 2rem;
+    color: $terciary-color;
+    border: none;
+    border-radius: 5px;
+  }
+  &:hover {
+    h1 {
+      display: none;
+      transition: ease 1s;
+    }
+    button {
+      transition: ease-in-out 0.5s;
+      font-family: $secondary-font;
+      outline: none;
+      display: block;
+      background: $secondary-color;
+      width: 100px;
+      height: 50px;
+    }
+    #thunder {
+      display: block;
+      transition: ease-in-out linear 2s;
+    }
+  }
+  @include responsive {
+    margin: 1rem auto 0 15rem;
+    h1 {
+      font-size: 7rem;
+      top: 30%;
+      left: 0;
+    }
+    button {
+      top: 40%;
+      left:35%;
+    }
+    &:hover {
+      button {
+        width: 200px;
+        height: 100px;
+        border-radius: 15px;
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+#thunder {
+  display: none;
+  pointer-events: none;
+  z-index: 1;
+  position: absolute;
+  top: -25%;
+  left: -50%;
+  width: 2000px;
+  height: 1000px;
+}
+
+
+#portal {
+  z-index: 2;
+  width: 30rem;
+  height: 30rem;
+  animation: 2.5s linear infinite spin !important;
+  transform-origin: center;
+  transform-box: fill-box;
+  @include responsive {
+    width: 60rem;
+    height: 60rem;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg)!important;
+  }
+}

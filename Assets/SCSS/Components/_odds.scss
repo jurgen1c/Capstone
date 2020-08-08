@@ -1,0 +1,42 @@
+/* ---------------------- Tickets Square & Arrow ------------ */
+
+#square {
+  text-align: center;
+  margin: 4rem auto;
+  width: 70px;
+  height: 70px;
+  background: $secondary-color;
+  border: none;
+  transform: rotate(45deg);
+  i {
+    margin: 38% auto auto 9%;
+    color: $primary-color;
+    border: none;
+    transform: rotate(-45deg);
+  }
+}
+
+/* ------------------- Tickets Step Box ----------------- */
+
+.step-box {
+  width: 55% !important;
+  text-align: left;
+  padding: 2rem;
+  border-radius: 25px;
+  border: 1px solid $secondary-color;
+}
+
+/* --------------------- More btn---------------------------- */
+
+.more-btn {
+  background: white;
+  margin: 2rem auto;
+  width: 95%;
+  height: 30px;
+  border: 1px solid $terciary-color;
+  color: $secondary-color;
+  font-size: 1.3rem;
+  @include responsive {
+    display: none;
+  }
+}

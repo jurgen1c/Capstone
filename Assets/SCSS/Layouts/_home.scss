@@ -1,0 +1,97 @@
+/* ------------------------- Hero section --------------------------- */
+
+.home-hero {
+  background: url("../Media/img/CATMEDIA-SPACE-Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0 1rem 0;
+  text-align: center;
+  height: 75rem;
+  >h1 {
+    font-size: 3rem;
+    font-family: myFirstFont;
+    margin: 2rem 0 0 0;
+    color: $terciary-color;
+  }
+  h2 {
+    color: $terciary-color;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 2rem;
+    color: $terciary-color;
+    margin: 0.5rem;
+    line-height: 1.6;
+  }
+  @include responsive {
+    padding: 10rem 0 1rem 0;
+    height: 100rem;
+    text-align: justify;
+    >h1 {
+      font-size: 4rem;
+      margin: 2rem auto 0 15rem;
+    }
+    h2 {
+      margin: 2rem auto 2rem 35%;
+    }
+    p {
+      margin: 0 25rem;
+      font-size: 3rem;
+    }
+  }
+}
+
+/* ------------------- Main Program --------------------- */
+
+.main-program {
+  text-align: center;
+  height: fit-content;
+  background: $secondary-color;
+  color: white;
+  padding: 3rem 0;
+  h1 {
+    font-size: 2rem;
+  }
+  hr {
+    border: 1px solid $primary-color;
+  }
+  a {
+    color: white;
+    font-size: 2rem;
+    border-bottom: 1px solid white;
+    margin: 5rem 0 !important;
+    &:hover {
+      color: white;
+    }
+  }
+}
+/* ------------------- Featured Speakers -------------------- */
+
+.featured-speakers {
+  text-align: left;
+  color: $secondary-color;
+  height: fit-content;
+  h1 {
+    margin: 1rem 0;
+  }
+  > hr {
+    border: 1px solid $primary-color;
+    height: 2px;
+  }
+  @include responsive {
+    text-align: center;
+  }
+}
+
+/* -------------------- Partners ------------------------------- */
+
+.partners {
+  text-align: center;
+  background: $secondary-color;
+  color: $terciary-color;
+  padding: 5rem 0;
+  height: fit-content;
+}

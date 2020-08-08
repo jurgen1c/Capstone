@@ -1,0 +1,96 @@
+/* --------------------------- Nav Bar ------------------- */
+
+#special-link {
+  border: 2px solid $primary-color;
+  width: 200px;
+  text-align: center;
+  &:hover {
+    border-radius: 5px;
+    transition: ease-in-out 1s;
+    margin: 0 2rem;
+  }
+  a {
+    color: $primary-color;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.navbar {
+  font-family: $secondary-font;
+  z-index: 999;
+  width: 100%;
+  margin: 0;
+  padding: .5rem 4rem;
+  color: $primary-color;
+  justify-content: space-between;
+  li {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    align-items: center;
+    border-radius: 5px;
+    &:hover {
+      transition: ease .5s;
+      background: $primary-color;
+      color: $secondary-color;
+      border-radius: 5px;
+      transform: scale(1.1);
+      margin: 0 1.5rem;
+      padding: auto .5rem;
+    }
+  }
+  a{
+    color: $primary-color;
+    font-family: $secondary-font;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+  button {
+    -webkit-text-stroke: 1px $secondary-color;
+    color: $primary-color;
+    background: none;
+    border: none;
+    &:active {
+      border: none;
+      outline: none;
+      transform: scale(1.2);
+    }
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  @include responsive {
+    button {
+      display: none;
+    }
+  }
+}
+
+.navbar-brand {
+  display: none;
+  @include responsive {
+    display: block;
+    i {
+      color: $primary-color;
+    }
+    i:hover {
+      font-size: xx-large;
+    }
+  }
+}
+
+.nav-links {
+  display: none;
+  @include responsive {
+    display: block;
+  }
+}
+
+.about-subnav {
+  margin: 1rem 1rem 1rem auto;
+  background: transparent;
+}
