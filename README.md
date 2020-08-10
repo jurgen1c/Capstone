@@ -3,19 +3,18 @@ HTML &amp; CSS Capstone
 
 In this project a full site will be made based of the graphic guidelines provided.
 
-![screenshot](./img/app_screenshot.png)
+![screenshot](./Assets/Media/img/home-screenshot.png)
 
 
 ## 🔧 Built With
 
 - HTML and CSS3.
-- Bootstrap 4.
-- Using StyleLinters.
-- W3 HTML Validation Service.
+- SASS.
+- Vs COde.
 
 ## 🔴 Live Demo
 
-[Live Demo Link](https://raw.githack.com/jurgen1c/Using-Bootstrap-Newsweek-Page/newsweek-page-milestone-1/index.html)
+[Live Demo Link](https://raw.githack.com/jurgen1c/Capstone/feature-branch/HTML/index.html)
 
 
 ## 🛠 Getting Started
@@ -26,12 +25,24 @@ To get a local copy up and running follow these simple example steps.
 - Press the "Code" button and get the repo link.
 - Clone it using git.
 
+## - Resources
+ - Created based on the conference page layout by Cindy Shin.
+ ![link](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+
+ - Color based of color phsycology & complementary relationship
+
+ ![link](https://worqx.com/color/color_wheel.htm)
+
+ - Color Pallete
+
+ ![screenshot](./Assets/Media/img/palette.png)
+
 ## ✒️ Author
 
 
 👤 **Jurgen Clausen**
 
-- Github: [@diazgio](https://github.com/jurgen1c)
+- Github: [@jurgen1c](https://github.com/jurgen1c)
 - LinkenIn:[LinkenIn](https://www.linkedin.com/in/jurgen-clausen-2740061a9/)
 
 ## 🤝 Contributing
