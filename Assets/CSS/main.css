@@ -157,11 +157,11 @@ ul { list-style: none; }
 
 @-webkit-keyframes spin { 0% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
   50% { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
-  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+  100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
 
 @keyframes spin { 0% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
   50% { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
-  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+  100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
 
 /* ------------------- Menu Picking ---------------------------- */
 .menu-container { margin: 2rem auto; padding: 8rem 2rem 1rem 2rem; border-radius: 2px; border: 1px solid #90bffd; background: -webkit-gradient(linear, left top, left bottom, from(#dbeafe), color-stop(20%, #f4f9ff), color-stop(20%, white), to(white)); background: linear-gradient(#dbeafe, #f4f9ff 20%, white 20%, white); }
