@@ -264,7 +264,7 @@ ul { list-style: none; }
 
 @media only screen and (min-width: 769px) { .past-box { width: 30%; height: 300px; } }
 
-.past-box-1 { width: 80%; margin: 1rem auto; height: 200px; background-image: -webkit-gradient(linear, left top, left bottom, from(#f8bb4b), to(white)), url("../../Media/img/buenosAires.jpg"); background-image: linear-gradient(to bottom, #f8bb4b, white), url("../../Media/img/buenosAires.jpg"); background-size: cover; background-repeat: no-repeat; }
+.past-box-1 { width: 80%; margin: 1rem auto; height: 200px; background-image: -webkit-gradient(linear, left top, left bottom, from(#f8bb4b), to(white)), url("../Media/img/buenosAires.jpg"); background-image: linear-gradient(to bottom, #f8bb4b, white), url("../Media/img/buenosAires.jpg"); background-size: cover; background-repeat: no-repeat; }
 
 @media only screen and (min-width: 769px) { .past-box-1 { width: 30%; height: 300px; } }
 

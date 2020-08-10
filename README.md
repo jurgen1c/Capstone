@@ -14,7 +14,7 @@ In this project a full site will be made based of the graphic guidelines provide
 
 ## 🔴 Live Demo
 
-[Live Demo Link](https://raw.githack.com/jurgen1c/Capstone/feature-branch/HTML/index.html)
+[Live Demo Link](https://raw.githack.com/jurgen1c/Capstone/feature-branch/index.html)
 
 
 ## 🛠 Getting Started
