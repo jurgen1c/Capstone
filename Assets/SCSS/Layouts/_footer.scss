@@ -5,6 +5,7 @@
   height: 100%;
   padding: 3rem;
   background: white;
+
   @include responsive {
     background-color: $secondary-color;
   }

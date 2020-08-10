@@ -27,11 +27,11 @@ To get a local copy up and running follow these simple example steps.
 
 ## - Resources
  - Created based on the conference page layout by Cindy Shin.
- ![link](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+ https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
 
  - Color based of color phsycology & complementary relationship
 
- ![link](https://worqx.com/color/color_wheel.htm)
+ https://worqx.com/color/color_wheel.htm
 
  - Color Pallete
 

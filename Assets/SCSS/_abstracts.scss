@@ -1,13 +1,14 @@
 
 $primary-color: rgb(248, 187, 75);
-$secondary-color: rgb(0, 18,41);
-$terciary-color: rgb(144,191,253);
+$secondary-color: rgb(0, 18, 41);
+$terciary-color: rgb(144, 191, 253);
 
 @font-face {
   font-family: myFirstFont;
   src: url("../Media/Fonts/Cocogoose\ Pro-trial.ttf");
 }
 $secondary-font: 'Lato', sans-serif;
+$primary-font: 'myFirstFont';
 
 $break: 769px;
 

@@ -1,21 +1,26 @@
 .about-subnav {
   margin: 10px 0 1rem 0;
   width: 100%;
+
   ul {
     justify-content: flex-end;
     padding: 1rem 2rem;
   }
+
   li {
     padding: 1rem;
     font-size: 1.1rem;
-    a{
+
+    a {
       color: $terciary-color;
       margin: 0.5rem;
     }
+
     i {
       margin: 0 0.5rem;
     }
   }
+
   @include responsive {
     margin: 80px 0 1rem 0;
   }

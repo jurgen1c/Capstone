@@ -8,44 +8,52 @@
   padding: 6rem 0 1rem 0;
   text-align: center;
   height: 100%;
-  >h1 {
+
+  > h1 {
     font-size: 3rem;
-    font-family: myFirstFont;
+    font-family: $primary-font;
     margin: 2rem 0 0 0;
     color: $terciary-color;
   }
+
   h2 {
     color: $terciary-color;
     font-size: 1.5rem;
     margin: 1rem 0;
     text-transform: uppercase;
   }
+
   p {
     font-size: 2rem;
     color: $secondary-color;
     margin: 0.5rem;
     line-height: 1.6;
-    background: rgba(144,191,253, 0.5);
+    background: rgba(144, 191, 253, 0.5);
     border: 1px solid $primary-color;
     padding: 1rem;
     border-radius: 5px;
   }
+
   @include responsive {
     padding: 10rem 0 1rem 0;
     height: 100%;
     text-align: left;
-    >h1 {
+
+    > h1 {
       font-size: 4rem;
       margin: 2rem auto 0 15rem;
     }
+
     h2 {
       margin: 2rem auto 2rem 35%;
     }
+
     p {
       width: 60%;
       margin: 1rem auto 1rem 5%;
       font-size: 3rem;
     }
+
     a {
       text-align: left;
     }
@@ -60,35 +68,43 @@
   background: $secondary-color;
   color: white;
   padding: 3rem 0;
+
   h1 {
     font-size: 2rem;
   }
+
   hr {
     border: 1px solid $primary-color;
   }
+
   a {
     color: white;
     font-size: 2rem;
     border-bottom: 1px solid white;
     margin: 5rem 0 !important;
+
     &:hover {
       color: white;
     }
   }
 }
+
 /* ------------------- Featured Speakers -------------------- */
 
 .featured-speakers {
   text-align: center;
   color: $secondary-color;
   height: fit-content;
+
   h1 {
     margin: 1rem 0;
   }
+
   > hr {
     border: 1px solid $primary-color;
     height: 2px;
   }
+
   @include responsive {
     text-align: center;
   }

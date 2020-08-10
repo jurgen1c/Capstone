@@ -8,6 +8,7 @@
   background: $secondary-color;
   border: none;
   transform: rotate(45deg);
+
   i {
     margin: 38% auto auto 9%;
     color: $primary-color;
@@ -27,9 +28,11 @@
   border: 1px solid $secondary-color;
   align-content: center;
   justify-content: center;
+
   p {
     margin: 0.5rem;
   }
+
   h6 {
     margin: 0.6rem;
   }
@@ -45,6 +48,7 @@
   border: 1px solid $terciary-color;
   color: $secondary-color;
   font-size: 1.3rem;
+
   @include responsive {
     display: none;
   }
@@ -55,6 +59,7 @@
 .schedule-btn {
   margin: 3rem auto;
   text-align: center;
+
   button {
     width: 200px;
     height: 100px;
@@ -64,11 +69,14 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    &:active, &:focus {
+
+    &:active,
+    &:focus {
       border: none;
       outline: none;
     }
   }
+
   @include responsive {
     button {
       width: 250px;

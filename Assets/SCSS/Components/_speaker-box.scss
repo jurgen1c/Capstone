@@ -4,31 +4,39 @@
   width: 100%;
   height: fit-content;
   text-align: center;
+
   h3 {
     font-size: 1.2rem;
   }
+
   &:hover {
     background: $secondary-color;
     color: $terciary-color;
     border-radius: 15px;
+
     h3 {
       font-size: 1.5rem;
     }
   }
+
   @include responsive {
     width: 40%;
     text-align: left;
     padding: 1rem;
     margin: 1rem 0 1rem 6rem;
+
     h3 {
       font-size: 3rem;
     }
+
     p {
       font-size: 1.5rem;
     }
+
     &:hover {
       padding: 2rem;
       height: 25rem;
+
       h3 {
         font-size: 2rem;
       }
@@ -40,11 +48,13 @@
   margin: 1rem 0 1rem 2rem;
   position: relative;
   justify-content: flex-end;
+
   img {
     position: absolute;
     width: 100px;
     height: 100px;
   }
+
   @include responsive {
     img {
       top: 3%;
@@ -63,6 +73,7 @@
 
 .speaker-bg-box {
   display: none;
+
   @include responsive {
     display: block;
     position: absolute;
@@ -70,7 +81,7 @@
     left: -10px;
     background-image: linear-gradient(45deg, #808080 25%, transparent 25%), linear-gradient(-45deg, #808080 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #808080 75%), linear-gradient(-45deg, transparent 75%, #808080 75%);
     background-size: 20px 20px;
-    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0;
     width: 100px;
     height: 100px;
   }

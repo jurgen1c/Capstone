@@ -11,6 +11,7 @@
   height: 200px;
   background-image: linear-gradient(to bottom, $primary-color, lighten($primary-color, 50%)), url('../../Media/img/singapur.jpg');
   background-size: cover;
+
   @include responsive {
     width: 30%;
     height: 300px;
@@ -24,6 +25,7 @@
   background-image: linear-gradient(to bottom, $primary-color, lighten($primary-color, 50%)), url("../../Media/img/buenosAires.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+
   @include responsive {
     width: 30%;
     height: 300px;

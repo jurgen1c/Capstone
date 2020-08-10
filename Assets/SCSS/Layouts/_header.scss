@@ -9,23 +9,27 @@
   font-family: $secondary-font;
   padding: 1rem;
   align-items: flex-end;
+
   a {
     color: $secondary-color;
     margin: 1rem 1rem 1rem 0;
   }
+
   a:hover {
     color: $terciary-color;
   }
+
   @include responsive {
     display: flex;
     justify-content: flex-end;
-  } 
+  }
 }
 
 .main-nav {
   background: transparent;
   position: sticky;
   height: 50px;
+
   @include responsive {
     background: $secondary-color;
     font-size: 1.8rem;

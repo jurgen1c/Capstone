@@ -1,4 +1,5 @@
 @import './abstracts';
+
 * {
   margin: 0;
   padding: 0;
@@ -21,11 +22,16 @@ header {
   top: 0;
 }
 
-h1, h2, h3 {
-  font-family: myFirstFont;
+h1,
+h2,
+h3 {
+  font-family: $primary-font;
 }
 
-h4, h5, h6, p {
+h4,
+h5,
+h6,
+p {
   font-family: $secondary-font;
 }
 
@@ -37,6 +43,7 @@ hr {
 
 a {
   text-decoration: none;
+
   &:hover {
     text-decoration: none !important;
   }
@@ -46,7 +53,7 @@ ul {
   list-style: none;
 }
 
-/* ----------------------- Framework -------------------------- */ 
+/* ----------------------- Framework -------------------------- */
 
 .m-1 {
   margin: 1rem;
@@ -86,6 +93,7 @@ ul {
 
 .d-none-dk {
   display: block !important;
+
   @include responsive {
     display: none !important;
   }
@@ -93,6 +101,7 @@ ul {
 
 .df-none-dk {
   display: flex;
+
   @include responsive {
     display: none;
   }
@@ -100,6 +109,7 @@ ul {
 
 .d-none-mob {
   display: none !important;
+
   @include responsive {
     display: block !important;
   }
@@ -107,6 +117,7 @@ ul {
 
 .df-none-mob {
   display: none !important;
+
   @include responsive {
     display: flex !important;
   }
@@ -120,6 +131,7 @@ ul {
 .flex-mobile {
   display: flex;
   flex-flow: row wrap;
+
   @include responsive {
     flex-flow: column wrap;
   }
@@ -128,6 +140,7 @@ ul {
 .flex-column-mobile {
   display: flex;
   flex-flow: column wrap;
+
   @include responsive {
     flex-flow: row wrap;
   }
@@ -143,6 +156,7 @@ ul {
   font-size: 2rem;
   border-radius: 15px;
   border: 1px solid $secondary-color;
+
   @include responsive {
     font-size: 2rem;
   }
@@ -159,15 +173,19 @@ ul {
   height: 100px;
   background: $primary-color;
   cursor: pointer;
+
   img {
     display: none;
   }
+
   &:hover {
     transition: ease-in-out 0.5s;
     outline: none;
   }
+
   &:active {
     outline: none;
+
     img {
       position: absolute;
       display: block;
@@ -177,8 +195,8 @@ ul {
       left: -250%;
     }
   }
+
   &:focus {
     outline: none;
   }
 }
-

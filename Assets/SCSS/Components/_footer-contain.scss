@@ -5,10 +5,12 @@
   margin: 2rem auto;
   justify-content: center;
   width: 100%;
-  div{
+
+  div {
     margin: 0 auto;
     text-align: center;
   }
+
   img {
     width: 30%;
   }
@@ -18,17 +20,21 @@
   text-align: right;
   width: 50%;
   padding: 0;
+
   i {
     color: $secondary-color;
   }
+
   a {
     color: $terciary-color;
   }
+
   @include responsive {
     padding: 0 0 2rem 0;
-  }
-  i {
-    color: $terciary-color;
+
+    i {
+      color: $terciary-color;
+    }
   }
 }
 
@@ -38,9 +44,11 @@
   text-align: left;
   padding: 0;
   color: $secondary-color;
+
   p {
     width: 100%;
   }
+
   @include responsive {
     padding: 0 4rem 0 2rem;
     text-align: left !important;

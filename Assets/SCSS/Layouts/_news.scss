@@ -4,6 +4,7 @@
   width: 100%;
   background: $secondary-color;
   height: 100px;
+
   @include responsive {
     border-top: 1px solid $primary-color;
     top: 80px;
@@ -12,21 +13,26 @@
 
 .news-nav {
   padding: 5rem 0 0 0;
+
   ul li {
     a {
       color: $primary-color;
-      font-family: myFirstFont;
+      font-family: $primary-font;
       font-size: 1.5rem;
       padding: 1rem 2rem;
-      background-image: linear-gradient(from bottom, $primary-color, $secondary-color);
+      background-image: linear-gradient(to bottom, $primary-color, $secondary-color);
       background-size: cover;
-      &:hover, &:active, &:focus {
+
+      &:hover,
+      &:active,
+      &:focus {
         background: $primary-color;
         border-radius: 5px;
         color: $secondary-color;
       }
     }
   }
+
   @include responsive {
     padding: 60px 0 1rem 0;
   }
@@ -41,12 +47,15 @@
   text-align: center;
   width: 90%;
   height: fit-content;
+
   @include responsive {
-    margin: 180px auto0 auto;
+    margin: 180px auto 0 auto;
   }
 }
 
-#tech, #weather, #paradoxes {
+#tech,
+#weather,
+#paradoxes {
   border: 2px solid $secondary-color;
   background: lighten($color: $primary-color, $amount: 25%);
   border-radius: 10px;

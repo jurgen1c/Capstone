@@ -5,10 +5,11 @@
   height: 50%;
   margin: 1rem auto;
   justify-content: center;
+
   i {
     margin: 2rem 3rem;
   }
-  
+
   @include responsive {
     margin: 10rem auto 2rem auto;
     justify-content: space-evenly;
