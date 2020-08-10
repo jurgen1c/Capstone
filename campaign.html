@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../Assets/CSS/main.css">
+  <link rel="stylesheet" href="./Assets/CSS/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/cf19c7517f.js" crossorigin="anonymous"></script>
   <title>Document</title>
@@ -60,22 +60,26 @@
     </div>
   </header>
   <main>
-    <section class="sponsers">
-      <h1>Partners</h1>
-      <hr>
-      <div class="flex-column-mobile sponsor-container">
-        <i class="fab fa-firefox-browser fa-5x"></i>
-        <i class="fab fa-google fa-5x"></i>
-        <i class="fab fa-slack fa-5x"></i>
-        <i class="fab fa-drupal fa-5x"></i>
-        <i class="fab fa-airbnb fa-5x"></i>
-      </div>
+    <section class="campaign-box">
+      <form>
+        <h1>Join the fight against Prejudice!!</h1>
+        <img src="./Assets/Media/img/singapur.jpg" alt="">
+        <p>Help stop the disinformation and the killing of grandfathers</p>
+        <input type="email" required>
+        <br>
+        <button class="thunder-btn" type="submit" data-target="form">
+          Join The Movement
+          <img src="./Assets/Media/img/Lighting-PNG-Pic.png" alt="">
+        </button>
+      </form>
     </section>
   </main>
-  <footer>
+  <footer class="footer-1">
     <div class="flex-column-mobile footer-container">
       <div class="footer-media">
-        <i class="fas fa-infinity fa-4x"> ITC</i>
+        <a href="">
+          <i class="fas fa-infinity fa-4x"> ITC</i>
+        </a>
       </div>
       <div class="footer-info">
         <h2>Creative Commons Korea</h2>
@@ -84,6 +88,6 @@
       </div>
     </div>
   </footer>
-  <script src="../Assets/scripts/main.js"></script>
+  <script src="./Assets/scripts/main.js"></script>
 </body>
 </html>
