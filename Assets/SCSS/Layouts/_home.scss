@@ -7,7 +7,7 @@
   background-position: center;
   padding: 6rem 0 1rem 0;
   text-align: center;
-  height: 75rem;
+  height: 100%;
   >h1 {
     font-size: 3rem;
     font-family: myFirstFont;
@@ -22,14 +22,18 @@
   }
   p {
     font-size: 2rem;
-    color: $terciary-color;
+    color: $secondary-color;
     margin: 0.5rem;
     line-height: 1.6;
+    background: rgba(144,191,253, 0.5);
+    border: 1px solid $primary-color;
+    padding: 1rem;
+    border-radius: 5px;
   }
   @include responsive {
     padding: 10rem 0 1rem 0;
-    height: 100rem;
-    text-align: justify;
+    height: 100%;
+    text-align: left;
     >h1 {
       font-size: 4rem;
       margin: 2rem auto 0 15rem;
@@ -38,8 +42,12 @@
       margin: 2rem auto 2rem 35%;
     }
     p {
-      margin: 0 25rem;
+      width: 60%;
+      margin: 1rem auto 1rem 5%;
       font-size: 3rem;
+    }
+    a {
+      text-align: left;
     }
   }
 }
@@ -71,7 +79,7 @@
 /* ------------------- Featured Speakers -------------------- */
 
 .featured-speakers {
-  text-align: left;
+  text-align: center;
   color: $secondary-color;
   height: fit-content;
   h1 {

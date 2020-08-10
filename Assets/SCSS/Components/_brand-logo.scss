@@ -1,10 +1,14 @@
 /* ------------------------- Brand Logo -----------------------*/
 
 .brand-logo {
+  width: 90%;
   padding: 1rem;
   border: solid 1px $terciary-color;
   img {
     width: 30%;
     height: 30%;
+  }
+  @include responsive {
+    width: 50%;
   }
 }

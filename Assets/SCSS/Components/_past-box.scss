@@ -9,10 +9,8 @@
   width: 80%;
   margin: 1rem auto;
   height: 200px;
-  background: url(),
-  linear-gradient(to bottom, $primary-color, lighten($primary-color, 50%));
+  background-image: linear-gradient(to bottom, $primary-color, lighten($primary-color, 50%)), url('../../Media/img/singapur.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
   @include responsive {
     width: 30%;
     height: 300px;
@@ -23,8 +21,7 @@
   width: 80%;
   margin: 1rem auto;
   height: 200px;
-  background: url(),
-  linear-gradient(to bottom, $primary-color, lighten($primary-color, 50%));
+  background-image: linear-gradient(to bottom, $primary-color, lighten($primary-color, 50%)), url("../../Media/img/buenosAires.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   @include responsive {

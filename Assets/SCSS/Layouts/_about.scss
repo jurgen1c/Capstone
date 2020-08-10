@@ -13,18 +13,18 @@
     color: $primary-color;
     -webkit-text-stroke: 1px $secondary-color;
     margin: 1rem auto;
-    font-size: 1.3rem;
+    font-size: 2em;
     width: 80%;
   }
   >p {
     color: $terciary-color;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 1rem auto;
     width: 80%;
   }
   a {
     color: $terciary-color;
-    font-size: 2rem;
+    font-size: 1.3rem;
     width: 20%;
     margin: 1rem auto;
     text-align: center;
@@ -33,6 +33,12 @@
     h1 {
       margin: 3rem auto;
       font-size: 6rem;
+    }
+    >p {
+      font-size: 2rem;
+    }
+    a {
+      font-size: 2rem;
     }
   }
 }
@@ -63,6 +69,8 @@
 .past {
   width: 100%;
   text-align: center;
+  color: $secondary-color;
+  font-size: 2rem;
   div {
     margin: 3rem auto;
   }

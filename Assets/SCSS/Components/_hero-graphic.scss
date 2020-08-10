@@ -28,10 +28,6 @@
     top: 40%;
     left: 35%;
     display: none;
-    font-size: 2rem;
-    color: $terciary-color;
-    border: none;
-    border-radius: 5px;
   }
   &:hover {
     h1 {
@@ -39,17 +35,7 @@
       transition: ease 1s;
     }
     button {
-      transition: ease-in-out 0.5s;
-      font-family: $secondary-font;
-      outline: none;
       display: block;
-      background: $secondary-color;
-      width: 100px;
-      height: 50px;
-    }
-    #thunder {
-      display: block;
-      transition: ease-in-out linear 2s;
     }
   }
   @include responsive {
@@ -65,24 +51,11 @@
     }
     &:hover {
       button {
-        width: 200px;
-        height: 100px;
         border-radius: 15px;
         font-size: 4rem;
       }
     }
   }
-}
-
-#thunder {
-  display: none;
-  pointer-events: none;
-  z-index: 1;
-  position: absolute;
-  top: -25%;
-  left: -50%;
-  width: 2000px;
-  height: 1000px;
 }
 
 

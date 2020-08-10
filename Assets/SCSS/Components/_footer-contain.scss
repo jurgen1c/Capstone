@@ -27,6 +27,9 @@
   @include responsive {
     padding: 0 0 2rem 0;
   }
+  i {
+    color: $terciary-color;
+  }
 }
 
 .footer-info {
@@ -39,6 +42,8 @@
     width: 100%;
   }
   @include responsive {
-    padding: 0 0 0 2rem;
+    padding: 0 4rem 0 2rem;
+    text-align: left !important;
+    color: $terciary-color;
   }
 }

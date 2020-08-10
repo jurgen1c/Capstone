@@ -8,66 +8,57 @@
     font-size: 1.2rem;
   }
   &:hover {
-    position: relative;
     background: $secondary-color;
     color: $terciary-color;
     border-radius: 15px;
-    height: 300%;
     h3 {
       font-size: 1.5rem;
     }
   }
   @include responsive {
-    width: 50%;
+    width: 40%;
     text-align: left;
-    padding: 2rem;
-    img {
-      width: 20rem;
-      height: 20rem;
-      top: 20%;
-      left: 35%;
-    }
+    padding: 1rem;
+    margin: 1rem 0 1rem 6rem;
     h3 {
       font-size: 3rem;
     }
+    p {
+      font-size: 1.5rem;
+    }
     &:hover {
-      text-align: end;
       padding: 2rem;
-      width: 50%;
       height: 25rem;
-    }
-  }
-}
-
-.speaker-img-box {
-  position: relative;
-  justify-content: flex-end;
-  img {
-    width: 150px;
-    height: 150px;
-  }
-  @include responsive {
-    img {
-      display: block;
-      position: absolute;
-      top: 3%;
-      left: 17%;
-      width: 250px;
-      height: 250px;
-    }
-    &:hover {
-      img {
-        top: 10%;
-        left: 10%;
-        width: 200px;
-        height: 200px;
+      h3 {
+        font-size: 2rem;
       }
     }
   }
 }
 
+.speaker-img-box {
+  margin: 1rem 0 1rem 2rem;
+  position: relative;
+  justify-content: flex-end;
+  img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+  @include responsive {
+    img {
+      top: 3%;
+      left: 17%;
+      display: block;
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
 .speaker-info {
-  width: 100%;
+  width: 60%;
+  margin: 0 2rem 1rem 18rem;
 }
 
 .speaker-bg-box {

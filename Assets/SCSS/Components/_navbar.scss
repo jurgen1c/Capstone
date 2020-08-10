@@ -1,18 +1,33 @@
 /* --------------------------- Nav Bar ------------------- */
 
 #special-link {
-  border: 2px solid $primary-color;
-  width: 200px;
+  border: 1px solid $secondary-color;
+  width: 350px;
+  border-radius: 5px;
   text-align: center;
-  &:hover {
-    border-radius: 5px;
-    transition: ease-in-out 1s;
-    margin: 0 2rem;
-  }
+  background: $primary-color;
   a {
-    color: $primary-color;
+    color: $secondary-color;
+  }
+  &:hover {
+    background: $secondary-color;
+    a {
+      color: $primary-color;
+    }
+  }
+  @include responsive {
+    background: none;
+    border: 2px solid $primary-color;
+    width: 200px;
     &:hover {
-      color: $secondary-color;
+      transition: ease-in-out 0.5s;
+      background: $primary-color;
+    }
+    a {
+      color: $primary-color;
+      &:hover {
+        color: $secondary-color;
+      }
     }
   }
 }
@@ -23,32 +38,30 @@
   width: 100%;
   margin: 0;
   padding: .5rem 4rem;
-  color: $primary-color;
-  justify-content: space-between;
+  justify-content: flex-start;
   li {
-    display: inline-block;
-    margin: 0 1rem;
-    padding: 0.5rem;
-    align-items: center;
+    margin: .3rem 0;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    background: $primary-color;
+    border: 1px solid $secondary-color;
     border-radius: 5px;
     &:hover {
-      transition: ease .5s;
-      background: $primary-color;
+      background: $secondary-color;
+      a {
+        color: $primary-color;
+      }
+    }
+    a {
       color: $secondary-color;
-      border-radius: 5px;
-      transform: scale(1.1);
-      margin: 0 1.5rem;
-      padding: auto .5rem;
+      font-size: 1.5rem;
+      text-decoration: none;
     }
   }
-  a{
-    color: $primary-color;
-    font-family: $secondary-font;
-    &:hover {
-      color: $secondary-color;
-    }
-  }
+
   button {
+    text-align: start;
     -webkit-text-stroke: 1px $secondary-color;
     color: $primary-color;
     background: none;
@@ -64,6 +77,30 @@
     }
   }
   @include responsive {
+    justify-content: space-between;
+    li {
+      background: none;
+      width: fit-content;
+      display: inline-block;
+      margin: 0 1rem;
+      padding: 0.5rem;
+      align-items: center;
+      color: $primary-color;
+      &:hover {
+        transition: ease .5s;
+        background: $primary-color;
+        border-radius: 5px;
+        transform: scale(1.1);
+        margin: 0 1.5rem;
+        padding: auto .5rem;
+        a {
+          color: $secondary-color;
+        }
+      }
+      a {
+        color: $primary-color;
+      }
+    }
     button {
       display: none;
     }
@@ -83,12 +120,14 @@
   }
 }
 
-.nav-links {
+
+#nav-links {
   display: none;
   @include responsive {
     display: block;
   }
 }
+
 
 .about-subnav {
   margin: 1rem 1rem 1rem auto;

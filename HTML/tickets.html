@@ -25,34 +25,34 @@
       <nav class="navbar flex-column-mobile">
         <div class="navbar-brand">
           <a href="#">
-            <i class="fas fa-infinity fa-2x"> ITc</i>
+            <i class="fas fa-infinity fa-2x"> ITC</i>
           </a>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="navbar-btn" type="button" onclick="navShow()">
           <i class="fas fa-bars fa-2x"></i>
         </button>
-        <div class="nav-links">
+        <div id="nav-links">
           <ul class="navbar-nav flex-column-mobile">
-            <li class="">
+            <li class="nav-li">
               <a href="index.html" class="">Home</a>
             </li>
-            <li class="">
+            <li class="nav-li">
               <a href="./about.html" class="">About</a>
             </li>
-            <li class="">
+            <li class="nav-li">
               <a href="program.html" class="">Program</a>
             </li>
-            <li class="">
+            <li class="nav-li">
               <a href="./tickets.html" class="">Join</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="">Sponsor</a>
+            <li class="nav-li">
+              <a href="./sponsor.html" class="">Sponsor</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="">News</a>
+            <li class="nav-li">
+              <a href="./news.html" class="">News</a>
             </li>
-            <li id="special-link">
-              <a href="#" class="">CC Campaign</a>
+            <li class="nav-li" id="special-link">
+              <a href="./campaign.html" class="">CC Campaign</a>
             </li>
           </ul>
         </div>
@@ -61,7 +61,7 @@
   </header>
   <main>
     <nav class="about-subnav">
-      <ul>
+      <ul class="flex">
         <li><a href=""><i class="fas fa-home"></i></a></li>
         <li><a href=""><i class="fas fa-home"></i></a></li>
         <li><a href=""><i class="fas fa-home"></i></a></li>
@@ -70,11 +70,11 @@
     <section class="select-tickets">
       <h1>Select Tickets</h1>
       <hr>
-      <div class="step-box flex">
+      <div class="step-box flex-column-mobile">
         <h6 class="color-prim">Step 1</h6>
         <p>Please select the day when you want to join ITC Global Summit</p>
       </div>
-      <div class="table-bg">
+      <div class="table-bg d-none-mob">
         <table class="table">
           <thead>
             <tr>
@@ -86,7 +86,7 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row">Date</th>
+              <th>Date</th>
               <td>15 Oct(Thu)</td>
               <td>16 Oct(Fri)</td>
               <td>15-16 Oct(Thu-Fri)</td>
@@ -134,17 +134,107 @@
           </tbody>
         </table>
       </div>
+      <div class="table-bg d-none-dk">
+        <table class="table">
+          <thead class="colo-prim-bg">
+            <tr>
+              <th colspan="1">Tickets</th>
+              <th colspan="2">1-Day-Ticket</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <td colspan="2">15 Oct(Thu)</td>
+            </tr>
+            <tr>
+              <th>Normal</th>
+              <td colspan="2">
+                <p class="color-prim"><s>W</s>70,000</p><br>
+                <input type="radio">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Students</th>
+              <td colspan="2">
+                <p class="color-prim"><s>W</s>30,000</p><br>
+                <input type="radio">
+              </td>
+            </tr>
+          </tbody>
+          <thead class="color-prim-bg">
+            <th colspan="1">Tickets</th>
+            <th colspan="2">2-Day-Ticket</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Date</th>
+              <td>15 Oct(Thu)</td>
+              <td>16 Oct(Fri)</td>
+            </tr>
+            <tr>
+              <th scope="row">Normal</th>
+              <td>
+                <p class="color-prim"><s>W</s>70,700</p><br>
+                <input type="radio">
+              </td>
+              <td>
+                <p class="color-prim"><s>W</s>100,000</p><br>
+                <input type="radio">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Students</th>
+              <td>
+                <p class="color-prim"><s>W</s>30,000</p><br>
+                <input type="radio">
+              </td>
+              <td>
+                <p class="color-prim"><s>W</s>50,000</p><br>
+                <input type="radio">
+              </td>
+            </tr>
+          </tbody>
+          <thead class="color-prim-bg">
+            <tr>
+              <th colspan="1">Tickets</th>
+              <th colspan="2">ITC Affiliate/Partners</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Date</th>
+              <td colspan="2">15-16 Oct(Thu-Fri)</td>
+            </tr>
+            <tr>
+              <th scope="row">Normal</th>
+              <td colspan="2">
+                <p class="color-prim"><s>W</s>0</p><br>
+                <input type="radio">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Students</th>
+              <td colspan="2">
+                <p class="color-prim"><s>W</s>0</p><br>
+                <br>
+                <input type="radio">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <div id="square">
         <i class="fas fa-chevron-down fa-2x"></i>
       </div>
       
       <h1>Select Your Lunch</h1>
       <hr>
-      <div class="step-box flex">
+      <div class="step-box flex-column-mobile">
         <h6 class="color-prim"><i></i>Step 2</h6>
         <p>Please select your lucnch for the selected day. There will be no further costs for the lunch.</p>
       </div>
-      <div class="menu-container flex">
+      <div class="menu-container flex-column-mobile">
         <div class="menu-box">
           <h5>Solemt Green</h5>
           <input type="radio">
@@ -158,15 +248,15 @@
           <input type="radio">
         </div>
         <div class="menu-box">
-          <h5></h5>
+          <h5>Hungry Hippos</h5>
           <input type="radio">
         </div>
         <div class="menu-box">
-          <h5></h5>
+          <h5>Raptor Leg</h5>
           <input type="radio">
         </div>
       </div>
-      <div class="menu-container flex">
+      <div class="menu-container flex-column-mobile">
         <div class="menu-box">
           <h5>Green Eggs & Ham</h5>
           <input type="radio">
@@ -176,35 +266,41 @@
           <input type="radio">
         </div>
         <div class="menu-box">
-          <h5></h5>
+          <h5>%#$%#$%#</h5>
           <input type="radio">
         </div>
         <div class="menu-box">
-          <h5></h5>
+          <h5>Omicron-13 Tentacles</h5>
           <input type="radio">
         </div>
         <div class="menu-box">
-          <h5></h5>
+          <h5>Apple Pie</h5>
           <input type="radio">
         </div>
       </div>
     </section>
     <div class="ticket-btn-container flex-column-mobile">
-      <button type="button">Save Changes</button>
-      <button type="submit"> Buy now</button>
+      <button class="primary-btn" type="button">Save Changes</button>
+      <button class="thunder-btn" type="button">
+        Buy now
+        <img src="../Assets/Media/img/Lighting-PNG-Pic.png" alt="lighting">
+      </button>
     </div>
   </main>
   <footer class="footer-1">
-    <div class="flex footer-container">
-      <div>
-        <img class="img-fluid" src="" alt="logo">
+    <div class="flex-column-mobile footer-container">
+      <div class="footer-media">
+        <a href="">
+          <i class="fas fa-infinity fa-4x"></i>
+        </a>
       </div>
       <div class="footer-info">
-        <h2>2015 Creative Commons Korea</h2>
+        <h2>Creative Commons Korea</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam nam impedit quisquam dicta rerum at consectetur vero molestiae veniam architecto quod eveniet veritatis dolores suscipit voluptate, ea autem! Cumque, mollitia.
         </p>
       </div>
     </div>
   </footer>
+  <script src="../Assets/scripts/main.js"></script>
 </body>
 </html>

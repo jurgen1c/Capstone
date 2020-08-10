@@ -1,0 +1,15 @@
+.about-subnav {
+  position: relative;
+  margin: 10px 0 1rem 0;
+  width: 100%;
+  ul {
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+  }
+  li {
+    padding: 1rem;
+  }
+  @include responsive {
+    margin: 80px 0 1rem 0;
+  }
+}

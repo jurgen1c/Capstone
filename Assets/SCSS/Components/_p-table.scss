@@ -1,0 +1,66 @@
+.p-table-container {
+  margin: 0 auto;
+  width: 90%;
+  height: fit-content;
+}
+
+.p-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  h3 {
+    font-family: $secondary-font;
+    font-size: 1.5rem;
+    color: $secondary-color;
+  }
+  p {
+    font-size: 1.2rem;
+    color: $secondary-color;
+  }
+}
+
+.p-table {
+  tr {
+    border-bottom: 1px solid $terciary-color;
+    padding: 1rem;
+    font-family: $secondary-font;
+    font-size: 1.2rem;
+  }
+  th {
+    border: none;
+    padding: 1rem;
+  }
+  td {
+    border: none;
+    padding: 1rem;
+  }
+}
+
+.w-contain,
+.l-contain,
+.f-contain,
+.e-contain {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.w-contain {
+  background: rgb(201, 178, 207);
+}
+
+.l-contain {
+  background: rgb(178, 191, 207);
+  z-index: 2;
+}
+
+.f-contain {
+  background: rgb(224, 158, 161);
+}
+
+.e-contain {
+  background: rgb(185, 247, 233);
+}
