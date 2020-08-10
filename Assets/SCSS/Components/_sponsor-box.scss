@@ -1,0 +1,37 @@
+.sponsers {
+  padding: 0 0 2rem 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  h1 {
+    color: $primary-color;
+    font-size: 3rem;
+    margin: 20px 0 0 0;
+  }
+  @include responsive {
+    h1 {
+      margin: 150px 0 0 0;
+      font-size: 5rem;
+    }
+  }
+}
+
+.sponsor-container {
+  padding: 2rem;
+  margin: 0 auto;
+  width: 95vw;
+  height: 100%;
+  justify-content: center;
+  background: $secondary-color;
+  border-radius: 15px;
+  i {
+    color: $terciary-color;
+    width: 100%;
+    margin: 4rem 0;
+    font-size: 10rem;
+  }
+  @include responsive {
+    width: 50%;
+    justify-content: space-around;
+  }
+}
