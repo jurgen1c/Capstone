@@ -1,0 +1,87 @@
+/* ---------------------- Tickets Square & Arrow ------------ */
+
+#square {
+  text-align: center;
+  margin: 4rem auto;
+  width: 70px;
+  height: 70px;
+  background: $secondary-color;
+  border: none;
+  transform: rotate(45deg);
+
+  i {
+    margin: 38% auto auto 9%;
+    color: $primary-color;
+    border: none;
+    transform: rotate(-45deg);
+  }
+}
+
+/* ------------------- Tickets Step Box ----------------- */
+
+.step-box {
+  margin: 1rem auto;
+  width: 55% !important;
+  text-align: left;
+  padding: 2rem;
+  border-radius: 25px;
+  border: 1px solid $secondary-color;
+  align-content: center;
+  justify-content: center;
+
+  p {
+    margin: 0.5rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+    margin: 0.6rem;
+  }
+}
+
+/* --------------------- More btn---------------------------- */
+
+.more-btn {
+  background: white;
+  margin: 2rem auto;
+  width: 95%;
+  height: 30px;
+  border: 1px solid $terciary-color;
+  color: $secondary-color;
+  font-size: 1.3rem;
+
+  @include responsive {
+    display: none;
+  }
+}
+
+/* ---------------------- Schedule btn ------------------ */
+
+.schedule-btn {
+  margin: 3rem auto;
+  text-align: center;
+
+  button {
+    width: 200px;
+    height: 100px;
+    background: $secondary-color;
+    color: $primary-color;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:active,
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+
+  @include responsive {
+    button {
+      width: 250px;
+      height: 100px;
+    }
+  }
+}

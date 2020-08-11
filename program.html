@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Assets/CSS/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cf19c7517f.js" crossorigin="anonymous"></script>
+  <title>ITC Program</title>
+</head>
+<body>
+  <header>
+    <div class="account-nav">
+      <nav>
+        <ul class="flex-column-mobile">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href="">English</a></li>
+          <li><a href="">My Page</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-nav">
+      <nav class="navbar flex-column-mobile">
+        <div class="navbar-brand">
+          <a href="#">
+            <i class="fas fa-infinity fa-2x"> ITC</i>
+          </a>
+        </div>
+        <button id="navbar-btn" type="button" onclick="navShow()">
+          <i class="fas fa-bars fa-2x"></i>
+        </button>
+        <div id="nav-links">
+          <ul class="navbar-nav flex-column-mobile">
+            <li class="nav-li">
+              <a href="index.html" class="">Home</a>
+            </li>
+            <li class="nav-li">
+              <a href="./about.html" class="">About</a>
+            </li>
+            <li class="nav-li">
+              <a href="program.html" class="">Program</a>
+            </li>
+            <li class="nav-li">
+              <a href="./tickets.html" class="">Join</a>
+            </li>
+            <li class="nav-li">
+              <a href="./sponsor.html" class="">Sponsor</a>
+            </li>
+            <li class="nav-li">
+              <a href="./news.html" class="">News</a>
+            </li>
+            <li class="nav-li" id="special-link">
+              <a href="./campaign.html" class="">CC Campaign</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <nav class="about-subnav flex d-none-mob">
+      <ul class="flex">
+        <li><a href=""><i class="fas fa-home"> <i class="fas fa-angle-right"></i></i></a></li>
+        <li><a href="">Program <i class="fas fa-angle-right"></i></a></li>
+        <li><a href="">Cc Campaign</a></li>
+      </ul>
+    </nav>
+    <section class="sched-head">
+      <h1>Schedule</h1>
+      <hr>
+      <div class="schedule-btns-cont flex">
+        <button type="button" class="color-ter-bg">Wednesday(Oct-14)</button>
+        <button type="button">Thursday(Oct-15)</button>
+        <button type="button">Friday(Oct-16)</button>
+        <button type="button">Saturday(Oct-17)</button>
+      </div>
+    </section>
+    <section class="sched-body">
+      <div class="sched-info">
+        <h5>10.16 (FRI)</h5>
+        <h3>ITC Work Of Sharing</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae itaque 
+          voluptate quia sed et ipsum eum molestias? Architecto, iste a?</p>
+      </div>
+      <div class="schedule-icons-container flex">
+        <a class="li-contain" id="lecture">
+          <i class="fas fa-chalkboard-teacher fa-3x"></i>
+        </a>
+        <a class="fi-contain" id="forum">
+          <i class="far fa-comment-alt fa-3x"></i>
+        </a>
+        <a class="wi-contain" id="workshop">
+          <i class="fas fa-pen-fancy fa-3x"></i>
+        </a>
+        <a class="ei-contain" id="events">
+          <i class="fas fa-project-diagram fa-3x"></i>
+        </a>
+      </div>
+      <div class="p-table-container">
+        <table class="p-table">
+          <thead>
+            <tr>
+              <th colspan="1">09:30</th>
+              <th colspan="3">Registration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>10:00-10:10</th>
+              <th colspan="3">
+                <p>Opening remarks TBD</p>
+              </th>
+            </tr>
+            <tr>
+              <th>10:10-10:40(30')</th>
+              <td colspan="3">
+                <div class="w-contain flex-column-mobile">
+                  <i class="fas fa-pen-fancy m-1"></i>
+                  <h3 class="d-none-mob">[Keynote] Humanology</h3>
+                  <div class="d-none-mob">
+                    <p>Prof. Kilnam Cheon</p>
+                    <p class="special-p">Main Auditorium</p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>10:40-10:50(10')</th>
+              <th colspan="3">Break</th>
+            </tr>
+            <tr>
+              <th>10:50-12:10(80')</th>
+              <td>
+                <div class="l-contain">
+                  <div>
+                    <i class="fas fa-chalkboard-teacher m-1"></i>
+                    <h3 class="d-none-mob">Open Business</h3>
+                  </div>
+                  <div class="d-none-mob">
+                    <p>What points should be ensured in order to succecced in open business?</p>
+                    <p class="special-p">Main Auditorium</p>
+                    <p><i class="fas fa-check"></i><a href="#">What's Open Business?</a></p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="l-contain">
+                  <div>
+                    <i class="fas fa-chalkboard-teacher m-1"></i>
+                    <h3 class="d-none-mob">Sharing City</h3>
+                  </div>
+                  <div class="d-none-mob">
+                    <p>What points should be ensured in order to succecced in open business?</p>
+                    <p class="special-p">Small Auditorium</p>
+                    <p><i class="fas fa-check"></i><a href="#">What's Sharing City?</a></p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="l-contain">
+                  <div>
+                    <i class="fas fa-chalkboard-teacher m-1"></i>
+                    <h3 class="d-none-mob">Open Business</h3>
+                  </div>
+                  <div class="d-none-mob">
+                    <p>What points should be ensured in order to succecced in open business?</p>
+                    <p class="special-p">Seminar Room</p>
+                    <p><i class="fas fa-check"></i><a href="#">What's Open Access?</a></p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>12:10-13:20(70')</th>
+              <th colspan="3">Lunch</th>
+            </tr>
+            <tr>
+              <th>13:20-14:50(90')</th>
+              <td>
+                <div class="l-contain">
+                  <div>
+                    <i class="fas fa-chalkboard-teacher m-1"></i>
+                    <h3 class="d-none-mob">Open Glam</h3>
+                  </div>
+                  <div class="d-none-mob">
+                    <p>What points should be ensured in order to succecced in open business?</p>
+                    <p class="special-p">Main Auditorium</p>
+                    <p class="float-right"><i></i><a href="#">What's Open Glam?</a></p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="f-contain">
+                  <div>
+                    <i class="fas fa-chalkboard-teacher m-1"></i>
+                    <h3 class="d-none-mob">Open Art</h3>
+                  </div>
+                  <div class="d-none-mob">
+                    <p>What points should be ensured in order to succecced in open business?</p>
+                    <p class="special-p">Seminar Room</p>
+                    <p class="float-right"><i></i><a href="#">What's Open Access?</a></p>
+                  </div>
+                </div>
+              </td>
+              <td rowspan="3">
+                <div class="l-contain">
+                  <div>
+                    <i class="fas fa-chalkboard-teacher m-1"></i>
+                    <h3 class="d-none-mob">Forum - Recycling Shared Creative Works</h3>
+                  </div>
+                  <div class="d-none-mob">
+                    <p>Hosted from Ministry of Culture, Sports and Tourism and Korea Copyright Comission</p>
+                    <p class="special-p">Seminar Room</p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>14:50-15:20(30')</th>
+              <th colspan="2">Break</th>
+            </tr>
+            <tr>
+              <th>15:20-16:40(80')</th>
+              <td>
+                <div class="l-contain">
+                  <div>
+                    <i class="fas fa-chalkboard-teacher m-1"></i>
+                    <h3 class="d-none-mob">Open Art</h3>
+                  </div>
+                  <div class="d-none-mob">
+                    <p>What points should be ensured in order to succecced in open business?</p>
+                    <p class="special-p">Seminar Room</p>
+                    <p class="float-right"><i></i><a href="#">What's Open Access?</a></p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="l-contain">
+                  <div>
+                    <i class="fas fa-chalkboard-teacher m-1"></i>
+                    <h3 class="d-none-mob">Open Art</h3>
+                  </div>
+                  <div class="d-none-mob">
+                    <p>What points should be ensured in order to succecced in open business?</p>
+                    <p class="special-p">Seminar Room</p>
+                    <p class="float-right"><i></i><a href="#">What's Open Access?</a></p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>16:40-17:00(20')</th>
+              <th colspan="3">break</th>
+            </tr>
+            <tr>
+              <th>17:00-17:40(40')</th>
+              <td colspan="3">
+                <div class="w-contain flex-column-mobile">
+                  <div class="flex-column-mobile">
+                    <i class="fas fa-pen-fancy m-1"></i>
+                    <h3 class="d-none-mob">[Closing note] Present and Future of shared knowledge resources</h3>
+                  </div>
+                  <div class="d-none-mob flex">
+                    <p>Lila Tretikov_Wikimedia CEO</p>
+                    <p class="special-p">Main Auditorium</p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>20:00-22:00</th>
+              <td colspan="3">
+                <div class="e-contain flex-column-mobile">
+                  <i class="fas fa-project-diagram m-1"></i>
+                  <h3 class="d-none-mob">ITC Party (only with invitation)</h3>
+                  <p class="special-p">Venue TBD</p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <div class="schedule-btn">
+      <button class="primary-btn" type="button">
+        Join ITC Global Summit
+      </button>
+    </div>
+  </main>
+  <footer class="footer-1">
+    <div class="flex footer-container">
+      <div>
+        <i class="fas fa-infinity fa-4x"> ITC</i>
+      </div>
+      <div class="footer-info">
+        <h2>Creative Commons Korea</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam nam impedit quisquam dicta rerum at consectetur vero molestiae veniam architecto quod eveniet veritatis dolores suscipit voluptate, ea autem! Cumque, mollitia.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./Assets/scripts/main.js"></script>
+</html>

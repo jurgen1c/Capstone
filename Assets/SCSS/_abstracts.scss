@@ -1,0 +1,20 @@
+
+$primary-color: #ec5242;
+$secondary-color: #272a31;
+$terciary-color: #d3d3d3;
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("../Media/Fonts/Cocogoose\ Pro-trial.ttf");
+}
+
+$secondary-font: 'Lato', sans-serif;
+$primary-font: 'myFirstFont';
+
+$break: 769px;
+
+@mixin responsive {
+  @media only screen and (min-width: $break) {
+    @content;
+  }
+}

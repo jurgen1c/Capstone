@@ -1,0 +1,57 @@
+/* --------------------- Footer Container -------------------- */
+
+.footer-container {
+  text-align: center;
+  margin: 2rem auto;
+  justify-content: center;
+  width: 100%;
+
+  div {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  img {
+    width: 30%;
+  }
+}
+
+.footer-media {
+  text-align: right;
+  width: 50%;
+  padding: 0;
+
+  i {
+    color: $primary-color;
+  }
+
+  a {
+    color: $secondary-color;
+  }
+
+  @include responsive {
+    padding: 0 0 2rem 0;
+
+    i {
+      color: $secondary-color;
+    }
+  }
+}
+
+.footer-info {
+  margin: 20px 0;
+  width: 50%;
+  text-align: left;
+  padding: 0;
+  color: $secondary-color;
+
+  p {
+    width: 100%;
+  }
+
+  @include responsive {
+    padding: 0 4rem 0 2rem;
+    text-align: left !important;
+    color: $terciary-color;
+  }
+}

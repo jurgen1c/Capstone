@@ -1,0 +1,22 @@
+/* -------------------- Select Tickets ----------------- */
+
+.select-tickets {
+  text-align: center;
+  padding: 10rem 0 2rem 0;
+  color: $secondary-color;
+
+  > div {
+    margin: 2rem auto;
+    width: 75%;
+  }
+
+  h1 {
+    font-family: $secondary-font;
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+
+  hr {
+    border: 1px solid $primary-color;
+  }
+}

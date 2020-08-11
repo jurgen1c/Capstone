@@ -1,0 +1,125 @@
+.sched-head {
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+
+  h1 {
+    color: $primary-color;
+    font-size: 2rem;
+    margin: 40px 0 1rem 0;
+  }
+
+  hr {
+    border: 1px solid $secondary-color;
+    margin: 2rem auto;
+  }
+
+  button {
+    width: 25%;
+    font-size: 0.9rem;
+    height: 40px;
+    border: none;
+    background: rgb(236, 236, 236);
+  }
+
+  @include responsive {
+    h1 {
+      margin: 2rem 0 1rem 0;
+      font-size: 4rem;
+    }
+
+    button {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.sched-body {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-content: center;
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  @include responsive {
+    h5 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.schedule-btns-cont {
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+
+  @include responsive {
+    width: 55%;
+  }
+}
+
+.schedule-icons-container {
+  width: 100%;
+  padding: 1rem;
+  justify-content: flex-end;
+
+  @include responsive {
+    margin: 0 15rem 0 0;
+  }
+}
+
+.p-table-container {
+  margin: 0 auto;
+  padding: 0;
+
+  @include responsive {
+    padding: 1rem;
+  }
+}
+
+.wi-contain,
+.li-contain,
+.fi-contain,
+.ei-contain {
+  width: 15%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 15px;
+}
+
+.wi-contain {
+  background: rgb(201, 178, 207);
+}
+
+.li-contain {
+  background: rgb(178, 191, 207);
+}
+
+.fi-contain {
+  background: rgb(224, 158, 161);
+}
+
+.ei-contain {
+  background: rgb(185, 247, 233);
+}

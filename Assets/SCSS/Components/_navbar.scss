@@ -1,0 +1,154 @@
+/* --------------------------- Nav Bar ------------------- */
+
+.navbar {
+  font-family: $secondary-font;
+  z-index: 999;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 4rem;
+  justify-content: flex-start;
+
+  li {
+    margin: 0.3rem 0;
+    text-align: center;
+    padding: 1rem;
+    width: 200px;
+    background: $primary-color;
+    border-radius: 5px;
+
+    a {
+      color: $secondary-color;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    &:hover {
+      background: $secondary-color;
+
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+
+  button {
+    text-align: start;
+    -webkit-text-stroke: 1px $secondary-color;
+    color: $primary-color;
+    background: none;
+    border: none;
+
+    &:active {
+      border: none;
+      outline: none;
+      transform: scale(1.2);
+    }
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+
+  @include responsive {
+    justify-content: space-between;
+
+    li {
+      background: none;
+      width: fit-content;
+      display: inline-block;
+      margin: 0 0.5rem;
+      padding: 0.5rem;
+      align-items: center;
+      color: $primary-color;
+
+      a {
+        color: $primary-color;
+      }
+
+      &:hover {
+        transition: ease 0.5s;
+        background: $primary-color;
+        border-radius: 5px;
+        transform: scale(1.1);
+        margin: 0 1.5rem;
+
+        a {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    button {
+      display: none;
+    }
+  }
+}
+
+#special-link {
+  border: 1px solid $secondary-color;
+  width: 200px;
+  border-radius: 5px;
+  text-align: center;
+  background: $primary-color;
+
+  a {
+    color: $secondary-color;
+  }
+
+  &:hover {
+    background: $secondary-color;
+
+    a {
+      color: $terciary-color;
+    }
+  }
+
+  @include responsive {
+    background: none;
+    border: 2px solid $primary-color;
+    width: 180px;
+
+    &:hover {
+      transition: ease-in-out 0.5s;
+      background: $primary-color;
+    }
+
+    a {
+      color: $primary-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  display: none;
+
+  @include responsive {
+    display: block;
+
+    i {
+      color: $primary-color;
+    }
+
+    i:hover {
+      font-size: xx-large;
+    }
+  }
+}
+
+#nav-links {
+  display: none;
+
+  @include responsive {
+    display: block !important;
+  }
+}
+
+.about-subnav {
+  margin: 1rem 1rem 1rem auto;
+  background: transparent;
+}

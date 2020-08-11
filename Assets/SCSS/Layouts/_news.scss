@@ -1,0 +1,65 @@
+.news-nav-contain {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $secondary-color;
+  height: 100px;
+
+  @include responsive {
+    border-top: 1px solid $primary-color;
+    top: 80px;
+  }
+}
+
+.news-nav {
+  padding: 70px 0 0 0;
+
+  ul li {
+    a {
+      color: $secondary-color;
+      font-family: $primary-font;
+      font-size: 1.2rem;
+      padding: 1rem 1.4rem;
+      background-image: linear-gradient(to bottom, $primary-color, $secondary-color);
+      background-size: cover;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $primary-color;
+        border-radius: 5px;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  @include responsive {
+    padding: 60px 0 1rem 0;
+  }
+}
+
+#world {
+  border: 2px solid $secondary-color;
+  background: lighten($color: $primary-color, $amount: 25%);
+  border-radius: 10px;
+  margin: 90px auto 0 auto;
+  padding: 1rem;
+  text-align: center;
+  width: 90%;
+  height: fit-content;
+
+  @include responsive {
+    margin: 180px auto 0 auto;
+  }
+}
+
+#tech,
+#weather,
+#paradoxes {
+  border: 2px solid $secondary-color;
+  background: lighten($color: $primary-color, $amount: 25%);
+  border-radius: 10px;
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 90%;
+}

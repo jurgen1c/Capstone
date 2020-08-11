@@ -1,0 +1,117 @@
+/* ------------------------- Hero section --------------------------- */
+
+.home-hero {
+  background: url("../Media/img/CATMEDIA-SPACE-Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0 1rem 0;
+  text-align: center;
+  height: 100%;
+
+  > h1 {
+    font-size: 2rem;
+    font-family: $primary-font;
+    margin: 2rem 0 0 1rem;
+    color: $primary-color;
+  }
+
+  h2 {
+    color: $terciary-color;
+    font-size: 1.3rem;
+    margin: 1rem 0 0 1rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1.3rem;
+    color: $secondary-color;
+    margin: 0.5rem;
+    line-height: 1.6;
+    background: $terciary-color;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  @include responsive {
+    padding: 10rem 0 1rem 0;
+    height: 100%;
+    text-align: left;
+
+    > h1 {
+      font-size: 4rem;
+      margin: 2rem auto 0 15rem;
+    }
+
+    h2 {
+      margin: 2rem auto 2rem 35%;
+    }
+
+    p {
+      width: 60%;
+      margin: 1rem auto 1rem 5%;
+      font-size: 2rem;
+    }
+  }
+}
+
+/* ------------------- Main Program --------------------- */
+
+.main-program {
+  text-align: center;
+  height: fit-content;
+  background: $secondary-color;
+  color: white;
+  padding: 3rem 0;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  hr {
+    border: 1px solid $primary-color;
+  }
+
+  a {
+    color: white;
+    font-size: 2rem;
+    border-bottom: 1px solid white;
+    margin: 5rem 0 !important;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+/* ------------------- Featured Speakers -------------------- */
+
+.featured-speakers {
+  text-align: center;
+  color: $secondary-color;
+  height: fit-content;
+
+  h1 {
+    margin: 1rem 0;
+  }
+
+  > hr {
+    border: 1px solid $primary-color;
+    height: 2px;
+  }
+
+  @include responsive {
+    text-align: center;
+  }
+}
+
+/* -------------------- Partners ------------------------------- */
+
+.partners {
+  text-align: center;
+  background: $secondary-color;
+  color: $terciary-color;
+  padding: 5rem 0;
+  height: fit-content;
+}

@@ -1,0 +1,201 @@
+@import './abstracts';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+}
+
+header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $primary-font;
+}
+
+h4,
+h5,
+h6,
+p {
+  font-family: $secondary-font;
+}
+
+hr {
+  width: 40px;
+  background: $secondary-color;
+  margin: 1rem auto;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+/* ----------------------- Framework -------------------------- */
+
+.m-1 {
+  margin: 1rem;
+}
+
+.color-prim {
+  color: $primary-color;
+}
+
+.color-prim-bg {
+  background: $primary-color;
+}
+
+.color-ter-bg {
+  background: $terciary-color !important;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.border-b {
+  border-bottom: 1px solid rgba($color: #615e5e, $alpha: 0.7);
+}
+
+.d-none-dk {
+  display: block !important;
+
+  @include responsive {
+    display: none !important;
+  }
+}
+
+.df-none-dk {
+  display: flex;
+
+  @include responsive {
+    display: none;
+  }
+}
+
+.d-none-mob {
+  display: none !important;
+
+  @include responsive {
+    display: block !important;
+  }
+}
+
+.df-none-mob {
+  display: none !important;
+
+  @include responsive {
+    display: flex !important;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-mobile {
+  display: flex;
+  flex-flow: row wrap;
+
+  @include responsive {
+    flex-flow: column wrap;
+  }
+}
+
+.flex-column-mobile {
+  display: flex;
+  flex-flow: column wrap;
+
+  @include responsive {
+    flex-flow: row wrap;
+  }
+}
+
+.primary-btn {
+  margin: 1rem;
+  width: 200px;
+  height: 100px;
+  background: $primary-color;
+  color: $secondary-color;
+  padding: 2rem;
+  font-size: 2rem;
+  border-radius: 15px;
+  border: 1px solid $secondary-color;
+
+  @include responsive {
+    font-size: 2rem;
+  }
+}
+
+.thunder-btn {
+  margin: 1rem;
+  font-size: 2rem;
+  font-family: $secondary-font;
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
+  border-radius: 15px;
+  width: 200px;
+  height: 100px;
+  background: $primary-color;
+  cursor: pointer;
+
+  img {
+    display: none;
+  }
+
+  &:hover {
+    transition: ease-in-out 0.5s;
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
+
+    img {
+      position: absolute;
+      display: block;
+      width: 1000%;
+      height: 1000%;
+      top: -350%;
+      left: -250%;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
