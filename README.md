@@ -29,14 +29,6 @@ To get a local copy up and running follow these simple example steps.
  - Created based on the conference page layout by Cindy Shin.
  https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
 
- - Color based of color phsycology & complementary relationship
-
- https://worqx.com/color/color_wheel.htm
-
- - Color Pallete
-
- ![screenshot](./Assets/Media/img/palette.png)
-
 ## ✒️ Author
 
 

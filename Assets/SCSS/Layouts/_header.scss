@@ -3,7 +3,7 @@
 .account-nav {
   display: none;
   width: 100%;
-  background: $primary-color;
+  background: $secondary-color;
   height: fit-content;
   font-size: 1.5rem;
   font-family: $secondary-font;
@@ -11,12 +11,8 @@
   align-items: flex-end;
 
   a {
-    color: $secondary-color;
-    margin: 1rem 1rem 1rem 0;
-  }
-
-  a:hover {
     color: $terciary-color;
+    margin: 1rem 1rem 1rem 0;
   }
 
   @include responsive {
@@ -31,7 +27,7 @@
   height: 50px;
 
   @include responsive {
-    background: $secondary-color;
+    background: whitesmoke;
     font-size: 1.8rem;
     padding: 0;
     width: 100vw;

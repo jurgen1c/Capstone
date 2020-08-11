@@ -22,18 +22,18 @@
   padding: 0;
 
   i {
-    color: $secondary-color;
+    color: $primary-color;
   }
 
   a {
-    color: $terciary-color;
+    color: $secondary-color;
   }
 
   @include responsive {
     padding: 0 0 2rem 0;
 
     i {
-      color: $terciary-color;
+      color: $secondary-color;
     }
   }
 }
@@ -52,6 +52,6 @@
   @include responsive {
     padding: 0 4rem 0 2rem;
     text-align: left !important;
-    color: $terciary-color;
+    color: $secondary-color;
   }
 }

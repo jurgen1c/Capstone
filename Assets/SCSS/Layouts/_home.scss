@@ -10,26 +10,26 @@
   height: 100%;
 
   > h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: $primary-font;
-    margin: 2rem 0 0 0;
-    color: $terciary-color;
+    margin: 2rem 0 0 1rem;
+    color: $primary-color;
   }
 
   h2 {
     color: $terciary-color;
-    font-size: 1.5rem;
-    margin: 1rem 0;
+    font-size: 1.3rem;
+    margin: 1rem 0 0 1rem;
     text-transform: uppercase;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: $secondary-color;
     margin: 0.5rem;
     line-height: 1.6;
-    background: rgba(144, 191, 253, 0.5);
-    border: 1px solid $primary-color;
+    background: $terciary-color;
+    border: 1px solid white;
     padding: 1rem;
     border-radius: 5px;
   }
@@ -51,11 +51,7 @@
     p {
       width: 60%;
       margin: 1rem auto 1rem 5%;
-      font-size: 3rem;
-    }
-
-    a {
-      text-align: left;
+      font-size: 2rem;
     }
   }
 }

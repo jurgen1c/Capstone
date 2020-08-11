@@ -16,6 +16,7 @@
 
   button {
     width: 25%;
+    font-size: 0.9rem;
     height: 40px;
     border: none;
     background: rgb(236, 236, 236);
@@ -25,6 +26,10 @@
     h1 {
       margin: 2rem 0 1rem 0;
       font-size: 4rem;
+    }
+
+    button {
+      font-size: 1.3rem;
     }
   }
 }
@@ -67,10 +72,10 @@
 .schedule-btns-cont {
   width: 100%;
   justify-content: center;
+  margin: 0 auto;
 
   @include responsive {
     width: 55%;
-    margin: 0 auto;
   }
 }
 
@@ -86,7 +91,11 @@
 
 .p-table-container {
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0;
+
+  @include responsive {
+    padding: 1rem;
+  }
 }
 
 .wi-contain,
